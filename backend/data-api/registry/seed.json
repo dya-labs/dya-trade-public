@@ -1,0 +1,3454 @@
+{
+  "generatedAt": "2026-11-08T10:54:58.345Z",
+  "catalogUrl": "https://1click.chaindefuser.com/v0/tokens",
+  "exchangeInfoUrl": "https://data-api.binance.vision/api/v3/exchangeInfo",
+  "assets": [
+    {
+      "assetId": "nep141:wrap.near",
+      "symbol": "wNEAR",
+      "chain": "near",
+      "contract": "wrap.near",
+      "coinGeckoId": "near",
+      "aliases": [
+        "wrapped-near"
+      ],
+      "sources": [
+        {
+          "id": "binance:NEARUSDC",
+          "venue": "binance",
+          "symbol": "NEARUSDC",
+          "base": "NEAR",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1710316800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/near/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:NEARUSDT",
+          "venue": "binance",
+          "symbol": "NEARUSDT",
+          "base": "NEAR",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1602651600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/near/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:WNEAR_USD",
+          "venue": "intents",
+          "symbol": "WNEAR_USD",
+          "base": "wNEAR",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sol.omft.near",
+      "symbol": "SOL",
+      "chain": "sol",
+      "contract": null,
+      "coinGeckoId": "solana",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:SOLUSDC",
+          "venue": "binance",
+          "symbol": "SOLUSDC",
+          "base": "SOL",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1632477600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/solana/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:SOLUSDT",
+          "venue": "binance",
+          "symbol": "SOLUSDT",
+          "base": "SOL",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1597125600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/solana/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:SOL_USD",
+          "venue": "intents",
+          "symbol": "SOL_USD",
+          "base": "SOL",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth.omft.near",
+      "symbol": "ETH",
+      "chain": "eth",
+      "contract": null,
+      "coinGeckoId": "ethereum",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:ETHUSDC",
+          "venue": "binance",
+          "symbol": "ETHUSDC",
+          "base": "ETH",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1544844060000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/ethereum/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:ETHUSDT",
+          "venue": "binance",
+          "symbol": "ETHUSDT",
+          "base": "ETH",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1502942400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/ethereum/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ETH_USD",
+          "venue": "intents",
+          "symbol": "ETH_USD",
+          "base": "ETH",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:nbtc.bridge.near",
+      "symbol": "BTC",
+      "chain": "near",
+      "contract": "nbtc.bridge.near",
+      "coinGeckoId": "bitcoin",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:BTCUSDC",
+          "venue": "binance",
+          "symbol": "BTCUSDC",
+          "base": "BTC",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1544843460000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/bitcoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:BTCUSDT",
+          "venue": "binance",
+          "symbol": "BTCUSDT",
+          "base": "BTC",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1502942400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/bitcoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:BTC_USD",
+          "venue": "intents",
+          "symbol": "BTC_USD",
+          "base": "BTC",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sui.omft.near",
+      "symbol": "SUI",
+      "chain": "sui",
+      "contract": null,
+      "coinGeckoId": "sui",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:SUIUSDC",
+          "venue": "binance",
+          "symbol": "SUIUSDC",
+          "base": "SUI",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1705651200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/sui/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:SUIUSDT",
+          "venue": "binance",
+          "symbol": "SUIUSDT",
+          "base": "SUI",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1683115200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/sui/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:SUI_USD",
+          "venue": "intents",
+          "symbol": "SUI_USD",
+          "base": "SUI",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:doge.omft.near",
+      "symbol": "DOGE",
+      "chain": "doge",
+      "contract": null,
+      "coinGeckoId": "dogecoin",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:DOGEUSDC",
+          "venue": "binance",
+          "symbol": "DOGEUSDC",
+          "base": "DOGE",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1562328000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/dogecoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:DOGEUSDT",
+          "venue": "binance",
+          "symbol": "DOGEUSDT",
+          "base": "DOGE",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1562328000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/dogecoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:DOGE_USD",
+          "venue": "intents",
+          "symbol": "DOGE_USD",
+          "base": "DOGE",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:zec.omft.near",
+      "symbol": "ZEC",
+      "chain": "zec",
+      "contract": null,
+      "coinGeckoId": "zcash",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:ZECUSDC",
+          "venue": "binance",
+          "symbol": "ZECUSDC",
+          "base": "ZEC",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1553140800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/zcash/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:ZECUSDT",
+          "venue": "binance",
+          "symbol": "ZECUSDT",
+          "base": "ZEC",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1553140800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/zcash/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ZEC_USD",
+          "venue": "intents",
+          "symbol": "ZEC_USD",
+          "base": "ZEC",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:ltc.omft.near",
+      "symbol": "LTC",
+      "chain": "ltc",
+      "contract": null,
+      "coinGeckoId": "litecoin",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:LTCUSDC",
+          "venue": "binance",
+          "symbol": "LTCUSDC",
+          "base": "LTC",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1548324000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/litecoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:LTCUSDT",
+          "venue": "binance",
+          "symbol": "LTCUSDT",
+          "base": "LTC",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1513135920000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/litecoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:LTC_USD",
+          "venue": "intents",
+          "symbol": "LTC_USD",
+          "base": "LTC",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:bch.omft.near",
+      "symbol": "BCH",
+      "chain": "bch",
+      "contract": null,
+      "coinGeckoId": "bitcoin-cash",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:BCHUSDC",
+          "venue": "binance",
+          "symbol": "BCHUSDC",
+          "base": "BCH",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1574935200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/bitcoin-cash/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:BCHUSDT",
+          "venue": "binance",
+          "symbol": "BCHUSDT",
+          "base": "BCH",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1574935200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/bitcoin-cash/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:BCH_USD",
+          "venue": "intents",
+          "symbol": "BCH_USD",
+          "base": "BCH",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:cardano.omft.near",
+      "symbol": "ADA",
+      "chain": "cardano",
+      "contract": null,
+      "coinGeckoId": "cardano",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:ADAUSDC",
+          "venue": "binance",
+          "symbol": "ADAUSDC",
+          "base": "ADA",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1553659200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/cardano/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:ADAUSDT",
+          "venue": "binance",
+          "symbol": "ADAUSDT",
+          "base": "ADA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1523937720000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/cardano/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ADA_USD",
+          "venue": "intents",
+          "symbol": "ADA_USD",
+          "base": "ADA",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:aptos.omft.near",
+      "symbol": "APT",
+      "chain": "aptos",
+      "contract": null,
+      "coinGeckoId": "aptos",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:APTUSDC",
+          "venue": "binance",
+          "symbol": "APTUSDC",
+          "base": "APT",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1713535200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aptos/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:APTUSDT",
+          "venue": "binance",
+          "symbol": "APTUSDT",
+          "base": "APT",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1666141200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aptos/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:APT_USD",
+          "venue": "intents",
+          "symbol": "APT_USD",
+          "base": "APT",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:tron.omft.near",
+      "symbol": "TRX",
+      "chain": "tron",
+      "contract": null,
+      "coinGeckoId": "tron",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:TRXUSDC",
+          "venue": "binance",
+          "symbol": "TRXUSDC",
+          "base": "TRX",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1548324180000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/tron/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:TRXUSDT",
+          "venue": "binance",
+          "symbol": "TRXUSDT",
+          "base": "TRX",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1528716600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/tron/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:TRX_USD",
+          "venue": "intents",
+          "symbol": "TRX_USD",
+          "base": "TRX",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:1100_111bzQBB5v7AhLyPMDwS8uJgQV24KaAPXtwyVWu2KXbbfQU6NXRCz",
+      "symbol": "XLM",
+      "chain": "stellar",
+      "contract": null,
+      "coinGeckoId": "stellar",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:XLMUSDC",
+          "venue": "binance",
+          "symbol": "XLMUSDC",
+          "base": "XLM",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1544843220000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/stellar/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:XLMUSDT",
+          "venue": "binance",
+          "symbol": "XLMUSDT",
+          "base": "XLM",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1527759000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/stellar/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:XLM_USD",
+          "venue": "intents",
+          "symbol": "XLM_USD",
+          "base": "XLM",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:starknet.omft.near",
+      "symbol": "STRK",
+      "chain": "starknet",
+      "contract": null,
+      "coinGeckoId": "starknet",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:STRKUSDC",
+          "venue": "binance",
+          "symbol": "STRKUSDC",
+          "base": "STRK",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1709625600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/starknet/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:STRKUSDT",
+          "venue": "binance",
+          "symbol": "STRKUSDT",
+          "base": "STRK",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1708434000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/starknet/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:STRK_USD",
+          "venue": "intents",
+          "symbol": "STRK_USD",
+          "base": "STRK",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:arb-0x912ce59144191c1204e64559fe8253a0e49e6548.omft.near",
+      "symbol": "ARB",
+      "chain": "arb",
+      "contract": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+      "coinGeckoId": "arbitrum",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:ARBUSDC",
+          "venue": "binance",
+          "symbol": "ARBUSDC",
+          "base": "ARB",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1703750400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/arbitrum/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:ARBUSDT",
+          "venue": "binance",
+          "symbol": "ARBUSDT",
+          "base": "ARB",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1679583600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/arbitrum/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ARB_USD",
+          "venue": "intents",
+          "symbol": "ARB_USD",
+          "base": "ARB",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:10_vLAiSt9KfUGKpw5cD3vsSyNYBo7",
+      "symbol": "OP",
+      "chain": "op",
+      "contract": "0x4200000000000000000000000000000000000042",
+      "coinGeckoId": "optimism",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:OPUSDC",
+          "venue": "binance",
+          "symbol": "OPUSDC",
+          "base": "OP",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1703750400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/optimism/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:OPUSDT",
+          "venue": "binance",
+          "symbol": "OPUSDT",
+          "base": "OP",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1654070400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/optimism/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:OP_USD",
+          "venue": "intents",
+          "symbol": "OP_USD",
+          "base": "OP",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:fogo.omdep.near",
+      "symbol": "FOGO",
+      "chain": "fogo",
+      "contract": null,
+      "coinGeckoId": "fogo",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:FOGOUSDC",
+          "venue": "binance",
+          "symbol": "FOGOUSDC",
+          "base": "FOGO",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1768485600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/fogo/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:FOGOUSDT",
+          "venue": "binance",
+          "symbol": "FOGOUSDT",
+          "base": "FOGO",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1768485600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/fogo/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:plasma.omft.near",
+      "symbol": "XPL",
+      "chain": "plasma",
+      "contract": null,
+      "coinGeckoId": "plasma",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:XPLUSDC",
+          "venue": "binance",
+          "symbol": "XPLUSDC",
+          "base": "XPL",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1758805200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/plasma/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:XPLUSDT",
+          "venue": "binance",
+          "symbol": "XPLUSDT",
+          "base": "XPL",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1758805200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/plasma/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:XPL_USD",
+          "venue": "intents",
+          "symbol": "XPL_USD",
+          "base": "XPL",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:dash.omft.near",
+      "symbol": "DASH",
+      "chain": "dash",
+      "contract": null,
+      "coinGeckoId": "dash",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:DASHUSDC",
+          "venue": "binance",
+          "symbol": "DASHUSDC",
+          "base": "DASH",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1762329600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/dash/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:DASHUSDT",
+          "venue": "binance",
+          "symbol": "DASHUSDT",
+          "base": "DASH",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1553745600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/dash/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:DASH_USD",
+          "venue": "intents",
+          "symbol": "DASH_USD",
+          "base": "DASH",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:movement.omft.near",
+      "symbol": "MOVE",
+      "chain": "movement",
+      "contract": null,
+      "coinGeckoId": "movement",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:MOVEUSDT",
+          "venue": "binance",
+          "symbol": "MOVEUSDT",
+          "base": "MOVE",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1733745600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/movement/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.omft.near",
+      "symbol": "AAVE",
+      "chain": "eth",
+      "contract": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+      "coinGeckoId": "aave",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:AAVEUSDC",
+          "venue": "binance",
+          "symbol": "AAVEUSDC",
+          "base": "AAVE",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1725436800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aave/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:AAVEUSDT",
+          "venue": "binance",
+          "symbol": "AAVEUSDT",
+          "base": "AAVE",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1602730800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aave/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:AAVE_USD",
+          "venue": "intents",
+          "symbol": "AAVE_USD",
+          "base": "AAVE",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x1f9840a85d5af5bf1d1762f925bdaddc4201f984.omft.near",
+      "symbol": "UNI",
+      "chain": "eth",
+      "contract": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "coinGeckoId": "uniswap",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:UNIUSDC",
+          "venue": "binance",
+          "symbol": "UNIUSDC",
+          "base": "UNI",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1709107200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/uniswap/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:UNIUSDT",
+          "venue": "binance",
+          "symbol": "UNIUSDT",
+          "base": "UNI",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1600311600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/uniswap/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:UNI_USD",
+          "venue": "intents",
+          "symbol": "UNI_USD",
+          "base": "UNI",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x514910771af9ca656af840dff83e8264ecf986ca.omft.near",
+      "symbol": "LINK",
+      "chain": "eth",
+      "contract": "0x514910771af9ca656af840dff83e8264ecf986ca",
+      "coinGeckoId": "chainlink",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:LINKUSDC",
+          "venue": "binance",
+          "symbol": "LINKUSDC",
+          "base": "LINK",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1547632800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/chainlink/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:LINKUSDT",
+          "venue": "binance",
+          "symbol": "LINKUSDT",
+          "base": "LINK",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1547632800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/chainlink/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:LINK_USD",
+          "venue": "intents",
+          "symbol": "LINK_USD",
+          "base": "LINK",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce.omft.near",
+      "symbol": "SHIB",
+      "chain": "eth",
+      "contract": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce",
+      "coinGeckoId": "shiba-inu",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:SHIBUSDC",
+          "venue": "binance",
+          "symbol": "SHIBUSDC",
+          "base": "SHIB",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1709798400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/shiba-inu/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:SHIBUSDT",
+          "venue": "binance",
+          "symbol": "SHIBUSDT",
+          "base": "SHIB",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1620644400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/shiba-inu/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:SHIB_USD",
+          "venue": "intents",
+          "symbol": "SHIB_USD",
+          "base": "SHIB",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x6982508145454ce325ddbe47a25d4ec3d2311933.omft.near",
+      "symbol": "PEPE",
+      "chain": "eth",
+      "contract": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "coinGeckoId": "pepe",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:PEPEUSDC",
+          "venue": "binance",
+          "symbol": "PEPEUSDC",
+          "base": "PEPE",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1709798400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pepe/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:PEPEUSDT",
+          "venue": "binance",
+          "symbol": "PEPEUSDT",
+          "base": "PEPE",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1683309600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pepe/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:PEPE_USD",
+          "venue": "intents",
+          "symbol": "PEPE_USD",
+          "base": "PEPE",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0xa35923162c49cf95e6bf26623385eb431ad920d3.omft.near",
+      "symbol": "TURBO",
+      "chain": "eth",
+      "contract": "0xa35923162c49cf95e6bf26623385eb431ad920d3",
+      "coinGeckoId": "turbo",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:TURBOUSDC",
+          "venue": "binance",
+          "symbol": "TURBOUSDC",
+          "base": "TURBO",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1732867200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/turbo/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:TURBOUSDT",
+          "venue": "binance",
+          "symbol": "TURBOUSDT",
+          "base": "TURBO",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1726480800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/turbo/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:TURBO_USD",
+          "venue": "intents",
+          "symbol": "TURBO_USD",
+          "base": "TURBO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x68749665ff8d2d112fa859aa293f07a622782f38.omft.near",
+      "symbol": "XAUT",
+      "chain": "eth",
+      "contract": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+      "coinGeckoId": "tether-gold",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:XAUTUSDC",
+          "venue": "binance",
+          "symbol": "XAUTUSDC",
+          "base": "XAUT",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1774533600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/tether-gold/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:XAUTUSDT",
+          "venue": "binance",
+          "symbol": "XAUTUSDT",
+          "base": "XAUT",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1774533600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/tether-gold/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:XAUT_USD",
+          "venue": "intents",
+          "symbol": "XAUT_USD",
+          "base": "XAUT",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sol-0xaad74c68eecfc9f8c5bdcea614f6167048c795ef.omdep.near",
+      "symbol": "PENGU",
+      "chain": "sol",
+      "contract": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+      "coinGeckoId": "pudgy-penguins",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:PENGUUSDC",
+          "venue": "binance",
+          "symbol": "PENGUUSDC",
+          "base": "PENGU",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1734595200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pudgy-penguins/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:PENGUUSDT",
+          "venue": "binance",
+          "symbol": "PENGUUSDT",
+          "base": "PENGU",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1734444000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pudgy-penguins/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:PENGU_USD",
+          "venue": "intents",
+          "symbol": "PENGU_USD",
+          "base": "PENGU",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sol-c58e6539c2f2e097c251f8edf11f9c03e581f8d4.omft.near",
+      "symbol": "TRUMP",
+      "chain": "sol",
+      "contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+      "coinGeckoId": "official-trump",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:TRUMPUSDC",
+          "venue": "binance",
+          "symbol": "TRUMPUSDC",
+          "base": "TRUMP",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1737275400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/official-trump/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:TRUMPUSDT",
+          "venue": "binance",
+          "symbol": "TRUMPUSDT",
+          "base": "TRUMP",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1737275400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/official-trump/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:TRUMP_USD",
+          "venue": "intents",
+          "symbol": "TRUMP_USD",
+          "base": "TRUMP",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sol-57d087fd8c460f612f8701f5499ad8b2eec5ab68.omft.near",
+      "symbol": "BOME",
+      "chain": "sol",
+      "contract": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+      "coinGeckoId": "book-of-meme",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:BOMEUSDC",
+          "venue": "binance",
+          "symbol": "BOMEUSDC",
+          "base": "BOME",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1712304000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/book-of-meme/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:BOMEUSDT",
+          "venue": "binance",
+          "symbol": "BOMEUSDT",
+          "base": "BOME",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1710592200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/book-of-meme/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:BOME_USD",
+          "venue": "intents",
+          "symbol": "BOME_USD",
+          "base": "BOME",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:base-0x98d0baa52b2d063e780de12f615f963fe8537553.omft.near",
+      "symbol": "KAITO",
+      "chain": "base",
+      "contract": "0x98d0baa52b2d063e780de12f615f963fe8537553",
+      "coinGeckoId": "kaito",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:KAITOUSDC",
+          "venue": "binance",
+          "symbol": "KAITOUSDC",
+          "base": "KAITO",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1740056400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/kaito/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:KAITOUSDT",
+          "venue": "binance",
+          "symbol": "KAITOUSDT",
+          "base": "KAITO",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1740056400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/kaito/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:KAITO_USD",
+          "venue": "intents",
+          "symbol": "KAITO_USD",
+          "base": "KAITO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202.omft.near",
+      "symbol": "KNC",
+      "chain": "eth",
+      "contract": "0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202",
+      "coinGeckoId": "kyber-network-crystal",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:KNCUSDT",
+          "venue": "binance",
+          "symbol": "KNCUSDT",
+          "base": "KNC",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1591948800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/kyber-network-crystal/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:KNC_USD",
+          "venue": "intents",
+          "symbol": "KNC_USD",
+          "base": "KNC",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:gnosis-0x9c58bacc331c9aa871afd802db6379a98e80cedb.omft.near",
+      "symbol": "GNO",
+      "chain": "gnosis",
+      "contract": "0x9c58bacc331c9aa871afd802db6379a98e80cedb",
+      "coinGeckoId": "gnosis",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:GNOUSDT",
+          "venue": "binance",
+          "symbol": "GNOUSDT",
+          "base": "GNO",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1630303200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/gnosis/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:GNO_USD",
+          "venue": "intents",
+          "symbol": "GNO_USD",
+          "base": "GNO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:gnosis-0x177127622c4a00f3d409b75571e12cb3c8973d3c.omft.near",
+      "symbol": "COW",
+      "chain": "gnosis",
+      "contract": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
+      "coinGeckoId": "cow-protocol",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:COWUSDC",
+          "venue": "binance",
+          "symbol": "COWUSDC",
+          "base": "COW",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1732867200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/cow-protocol/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:COWUSDT",
+          "venue": "binance",
+          "symbol": "COWUSDT",
+          "base": "COW",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1730894400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/cow-protocol/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:COW_USD",
+          "venue": "intents",
+          "symbol": "COW_USD",
+          "base": "COW",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:56_12zbnsg6xndDVj25QyL82YMPudb",
+      "symbol": "ASTER",
+      "chain": "bsc",
+      "contract": "0x000ae314e2a2172a039b26378814c252734f556a",
+      "coinGeckoId": "aster-2",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:ASTERUSDC",
+          "venue": "binance",
+          "symbol": "ASTERUSDC",
+          "base": "ASTER",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1759752000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aster-2/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:ASTERUSDT",
+          "venue": "binance",
+          "symbol": "ASTERUSDT",
+          "base": "ASTER",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1759752000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aster-2/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ASTER_USD",
+          "venue": "intents",
+          "symbol": "ASTER_USD",
+          "base": "ASTER",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:arb-0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a.omft.near",
+      "symbol": "GMX",
+      "chain": "arb",
+      "contract": "0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a",
+      "coinGeckoId": "gmx",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "binance:GMXUSDT",
+          "venue": "binance",
+          "symbol": "GMXUSDT",
+          "base": "GMX",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1664964000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/gmx/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:xrp.omft.near",
+      "symbol": "XRP",
+      "chain": "xrp",
+      "contract": null,
+      "coinGeckoId": "xrp",
+      "aliases": [
+        "ripple"
+      ],
+      "sources": [
+        {
+          "id": "binance:XRPUSDC",
+          "venue": "binance",
+          "symbol": "XRPUSDC",
+          "base": "XRP",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1544843040000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/ripple/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:XRPUSDT",
+          "venue": "binance",
+          "symbol": "XRPUSDT",
+          "base": "XRP",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1525421460000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/ripple/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:XRP_USD",
+          "venue": "intents",
+          "symbol": "XRP_USD",
+          "base": "XRP",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:43114_11111111111111111111",
+      "symbol": "AVAX",
+      "chain": "avax",
+      "contract": null,
+      "coinGeckoId": "avalanche",
+      "aliases": [
+        "avalanche-2"
+      ],
+      "sources": [
+        {
+          "id": "binance:AVAXUSDC",
+          "venue": "binance",
+          "symbol": "AVAXUSDC",
+          "base": "AVAX",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1703750400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/avalanche-2/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:AVAXUSDT",
+          "venue": "binance",
+          "symbol": "AVAXUSDT",
+          "base": "AVAX",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1600756200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/avalanche-2/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:AVAX_USD",
+          "venue": "intents",
+          "symbol": "AVAX_USD",
+          "base": "AVAX",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:56_11111111111111111111",
+      "symbol": "BNB",
+      "chain": "bsc",
+      "contract": null,
+      "coinGeckoId": "bnb",
+      "aliases": [
+        "binancecoin"
+      ],
+      "sources": [
+        {
+          "id": "binance:BNBUSDC",
+          "venue": "binance",
+          "symbol": "BNBUSDC",
+          "base": "BNB",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1544843460000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/binancecoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:BNBUSDT",
+          "venue": "binance",
+          "symbol": "BNBUSDT",
+          "base": "BNB",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1509940440000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/binancecoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:BNB_USD",
+          "venue": "intents",
+          "symbol": "BNB_USD",
+          "base": "BNB",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:137_11111111111111111111",
+      "symbol": "POL",
+      "chain": "pol",
+      "contract": null,
+      "coinGeckoId": "polygon",
+      "aliases": [
+        "polygon-ecosystem-token"
+      ],
+      "sources": [
+        {
+          "id": "binance:POLUSDC",
+          "venue": "binance",
+          "symbol": "POLUSDC",
+          "base": "POL",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1726221600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/polygon-ecosystem-token/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": "binance:MATICUSDC",
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/619c4929fc3f4a0d9df7f9ae1d4519a5"
+        },
+        {
+          "id": "binance:POLUSDT",
+          "venue": "binance",
+          "symbol": "POLUSDT",
+          "base": "POL",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1726221600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/polygon-ecosystem-token/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": "binance:MATICUSDT",
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/619c4929fc3f4a0d9df7f9ae1d4519a5"
+        },
+        {
+          "id": "binance:MATICUSDC",
+          "venue": "binance",
+          "symbol": "MATICUSDC",
+          "base": "MATIC",
+          "quote": "USDC",
+          "rank": 11,
+          "validFrom": 1703750400000,
+          "validTo": 1726185600000,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/polygon-ecosystem-token/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/619c4929fc3f4a0d9df7f9ae1d4519a5"
+        },
+        {
+          "id": "binance:MATICUSDT",
+          "venue": "binance",
+          "symbol": "MATICUSDT",
+          "base": "MATIC",
+          "quote": "USDT",
+          "rank": 12,
+          "validFrom": 1556290800000,
+          "validTo": 1726185600000,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/polygon-ecosystem-token/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/619c4929fc3f4a0d9df7f9ae1d4519a5"
+        },
+        {
+          "id": "intents:POL_USD",
+          "venue": "intents",
+          "symbol": "POL_USD",
+          "base": "POL",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:bera.omft.near",
+      "symbol": "BERA",
+      "chain": "bera",
+      "contract": null,
+      "coinGeckoId": "berachain",
+      "aliases": [
+        "berachain-bera"
+      ],
+      "sources": [
+        {
+          "id": "binance:BERAUSDC",
+          "venue": "binance",
+          "symbol": "BERAUSDC",
+          "base": "BERA",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1738846800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/berachain-bera/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:BERAUSDT",
+          "venue": "binance",
+          "symbol": "BERAUSDT",
+          "base": "BERA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1738846800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/berachain-bera/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:BERA_USD",
+          "venue": "intents",
+          "symbol": "BERA_USD",
+          "base": "BERA",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sol-b9c68f94ec8fd160137af8cdfe5e61cd68e2afba.omft.near",
+      "symbol": "$WIF",
+      "chain": "sol",
+      "contract": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+      "coinGeckoId": "dogwifhat",
+      "aliases": [
+        "dogwifcoin"
+      ],
+      "sources": [
+        {
+          "id": "binance:WIFUSDC",
+          "venue": "binance",
+          "symbol": "WIFUSDC",
+          "base": "WIF",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1712304000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/dogwifcoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "binance:WIFUSDT",
+          "venue": "binance",
+          "symbol": "WIFUSDT",
+          "base": "WIF",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1709647200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/dogwifcoin/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:WIF_USD",
+          "venue": "intents",
+          "symbol": "WIF_USD",
+          "base": "$WIF",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:1117_",
+      "symbol": "GRAM",
+      "chain": "ton",
+      "contract": null,
+      "coinGeckoId": "gram",
+      "aliases": [
+        "the-open-network"
+      ],
+      "sources": [
+        {
+          "id": "binance:GRAMUSDC",
+          "venue": "binance",
+          "symbol": "GRAMUSDC",
+          "base": "GRAM",
+          "quote": "USDC",
+          "rank": 1,
+          "validFrom": 1782979200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/the-open-network/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": "binance:TONUSDC",
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/8177254072cf4da3b9d8fcaacceb0a2c"
+        },
+        {
+          "id": "binance:GRAMUSDT",
+          "venue": "binance",
+          "symbol": "GRAMUSDT",
+          "base": "GRAM",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1782979200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/the-open-network/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": "binance:TONUSDT",
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/8177254072cf4da3b9d8fcaacceb0a2c"
+        },
+        {
+          "id": "binance:TONUSDC",
+          "venue": "binance",
+          "symbol": "TONUSDC",
+          "base": "TON",
+          "quote": "USDC",
+          "rank": 11,
+          "validFrom": 1724313600000,
+          "validTo": 1782950400000,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/the-open-network/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/8177254072cf4da3b9d8fcaacceb0a2c"
+        },
+        {
+          "id": "binance:TONUSDT",
+          "venue": "binance",
+          "symbol": "TONUSDT",
+          "base": "TON",
+          "quote": "USDT",
+          "rank": 12,
+          "validFrom": 1723111200000,
+          "validTo": 1782950400000,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/the-open-network/tickers?exchange_ids=binance&order=volume_desc",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "continuationEvidence": "https://www.binance.com/en/support/announcement/detail/8177254072cf4da3b9d8fcaacceb0a2c"
+        },
+        {
+          "id": "intents:GRAM_USD",
+          "venue": "intents",
+          "symbol": "GRAM_USD",
+          "base": "GRAM",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:base-0xc2bc2a4cd04358281c7cf36a057fc15e5552b18b.omdep.near",
+      "symbol": "SSC1_PIT",
+      "chain": "base",
+      "contract": "0xc2bc2a4cd04358281c7cf36a057fc15e5552b18b",
+      "coinGeckoId": "custom:ssc1-pit",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:eth-0xd9c2d319cd7e6177336b0a9c93c21cb48d84fb54.omft.near",
+      "symbol": "HAPI",
+      "chain": "eth",
+      "contract": "0xd9c2d319cd7e6177336b0a9c93c21cb48d84fb54",
+      "coinGeckoId": "hapi",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:eth-0x0f38f1ce62776d4a0038bc6cac66877a5687383b.omft.near",
+      "symbol": "TLO",
+      "chain": "eth",
+      "contract": "0x0f38f1ce62776d4a0038bc6cac66877a5687383b",
+      "coinGeckoId": null,
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No CoinGecko identity in 1Click catalog"
+    },
+    {
+      "assetId": "nep141:base-0xa5c67d8d37b88c2d88647814da5578128e2c93b2.omft.near",
+      "symbol": "FMS",
+      "chain": "base",
+      "contract": "0xa5c67d8d37b88c2d88647814da5578128e2c93b2",
+      "coinGeckoId": null,
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No CoinGecko identity in 1Click catalog"
+    },
+    {
+      "assetId": "nep141:sol-bb27241c87aa401cc963c360c175dd7ca7035873.omft.near",
+      "symbol": "LOUD",
+      "chain": "sol",
+      "contract": "EJZJpNa4tDZ3kYdcRZgaAtaKm3fLJ5akmyPkCaKmfWvd",
+      "coinGeckoId": "loud",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:sol-0x4629c2e57ccb57f0a21e04f5b5449ef251932cec.omdep.near",
+      "symbol": "NEARKAT",
+      "chain": "sol",
+      "contract": "6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr",
+      "coinGeckoId": "nearkat-2",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:143_11111111111111111111",
+      "symbol": "MON",
+      "chain": "monad",
+      "contract": null,
+      "coinGeckoId": "monad",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "bybit:MONUSDT",
+          "venue": "bybit",
+          "symbol": "MONUSDT",
+          "base": "MON",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1763996400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/monad/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:MON_USD",
+          "venue": "intents",
+          "symbol": "MON_USD",
+          "base": "MON",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:36900_11111111111111111111",
+      "symbol": "ADI",
+      "chain": "adi",
+      "contract": null,
+      "coinGeckoId": "adi-token",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kucoin:ADI-USDT",
+          "venue": "kucoin",
+          "symbol": "ADI-USDT",
+          "base": "ADI",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1765281600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/adi-token/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ADI_USD",
+          "venue": "intents",
+          "symbol": "ADI_USD",
+          "base": "ADI",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:base-0x532f27101965dd16442e59d40670faf5ebb142e4.omft.near",
+      "symbol": "BRETT",
+      "chain": "base",
+      "contract": "0x532f27101965dd16442e59d40670faf5ebb142e4",
+      "coinGeckoId": "brett-2",
+      "aliases": [
+        "based-brett"
+      ],
+      "sources": [
+        {
+          "id": "bybit:BRETTUSDT",
+          "venue": "bybit",
+          "symbol": "BRETTUSDT",
+          "base": "BRETT",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1713427200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/based-brett/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:token.sweat",
+      "symbol": "SWEAT",
+      "chain": "near",
+      "contract": "token.sweat",
+      "coinGeckoId": "sweat-economy",
+      "aliases": [
+        "sweatcoin"
+      ],
+      "sources": [
+        {
+          "id": "kraken:SWEATUSD",
+          "venue": "kraken",
+          "symbol": "SWEATUSD",
+          "base": "SWEAT",
+          "quote": "USD",
+          "rank": 3,
+          "validFrom": 1751467140000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/sweatcoin/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:SWEAT_USD",
+          "venue": "intents",
+          "symbol": "SWEAT_USD",
+          "base": "SWEAT",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:token.rhealab.near",
+      "symbol": "RHEA",
+      "chain": "near",
+      "contract": "token.rhealab.near",
+      "coinGeckoId": "rhea-2",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "gate:RHEA_USDT",
+          "venue": "gate",
+          "symbol": "RHEA_USDT",
+          "base": "RHEA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1753833600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/rhea-2/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:RHEA_USD",
+          "venue": "intents",
+          "symbol": "RHEA_USD",
+          "base": "RHEA",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:token.publicailab.near",
+      "symbol": "PUBLIC",
+      "chain": "near",
+      "contract": "token.publicailab.near",
+      "coinGeckoId": "publicai",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kucoin:PUBLIC-USDT",
+          "venue": "kucoin",
+          "symbol": "PUBLIC-USDT",
+          "base": "PUBLIC",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1755246600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/publicai/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:PUBLIC_USD",
+          "venue": "intents",
+          "symbol": "PUBLIC_USD",
+          "base": "PUBLIC",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0xaaaaaa20d9e0e2461697782ef11675f668207961.omft.near",
+      "symbol": "AURORA",
+      "chain": "eth",
+      "contract": "0xaaaaaa20d9e0e2461697782ef11675f668207961",
+      "coinGeckoId": "aurora-near",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kucoin:AURORA-USDT",
+          "venue": "kucoin",
+          "symbol": "AURORA-USDT",
+          "base": "AURORA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1650880800000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aurora-near/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:AURORA_USD",
+          "venue": "intents",
+          "symbol": "AURORA_USD",
+          "base": "AURORA",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0x5afe3855358e112b5647b952709e6165e1c1eeee.omft.near",
+      "symbol": "SAFE",
+      "chain": "eth",
+      "contract": "0x5afe3855358e112b5647b952709e6165e1c1eeee",
+      "coinGeckoId": "safe",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "bybit:SAFEUSDT",
+          "venue": "bybit",
+          "symbol": "SAFEUSDT",
+          "base": "SAFE",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1713855600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/safe/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:SAFE_USD",
+          "venue": "intents",
+          "symbol": "SAFE_USD",
+          "base": "SAFE",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0xdef1b2d939edc0e4d35806c59b3166f790175afe.omft.near",
+      "symbol": "INX",
+      "chain": "eth",
+      "contract": "0xdef1b2d939edc0e4d35806c59b3166f790175afe",
+      "coinGeckoId": "infinex",
+      "aliases": [
+        "infinex-2"
+      ],
+      "sources": [
+        {
+          "id": "gate:INX_USDT",
+          "venue": "gate",
+          "symbol": "INX_USDT",
+          "base": "INX",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1769817600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/infinex-2/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:INX_USD",
+          "venue": "intents",
+          "symbol": "INX_USD",
+          "base": "INX",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:base-0xe62bfbe57763ec24c0f130426f34dbce11fc5b06.omft.near",
+      "symbol": "TITN",
+      "chain": "base",
+      "contract": "0xe62bfbe57763ec24c0f130426f34dbce11fc5b06",
+      "coinGeckoId": "thor-wallet",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "gate:TITN_USDT",
+          "venue": "gate",
+          "symbol": "TITN_USDT",
+          "base": "TITN",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1762128000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/thor-wallet/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:TITN_USD",
+          "venue": "intents",
+          "symbol": "TITN_USD",
+          "base": "TITN",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:base-0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf.omft.near",
+      "symbol": "VVV",
+      "chain": "base",
+      "contract": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+      "coinGeckoId": "venice-token",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "bybit:VVVUSDT",
+          "venue": "bybit",
+          "symbol": "VVVUSDT",
+          "base": "VVV",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1742551200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/venice-token/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:VVV_USD",
+          "venue": "intents",
+          "symbol": "VVV_USD",
+          "base": "VVV",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:hood-0x39dbed3a2bd333467115de45665cc57f813c4571.omft.near",
+      "symbol": "PONS",
+      "chain": "hood",
+      "contract": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+      "coinGeckoId": "pons",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "okx:PONS-USDT",
+          "venue": "okx",
+          "symbol": "PONS-USDT",
+          "base": "PONS",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1789482600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pons/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:PONS_USD",
+          "venue": "intents",
+          "symbol": "PONS_USD",
+          "base": "PONS",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:hood-0x020bfc650a365f8bb26819deaabf3e21291018b4.omft.near",
+      "symbol": "CASHCAT",
+      "chain": "hood",
+      "contract": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "coinGeckoId": "cash-cat",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kucoin:CASHCAT-USDT",
+          "venue": "kucoin",
+          "symbol": "CASHCAT-USDT",
+          "base": "CASHCAT",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1784109600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/cash-cat/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:CASHCAT_USD",
+          "venue": "intents",
+          "symbol": "CASHCAT_USD",
+          "base": "CASHCAT",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0xaaee1a9723aadb7afa2810263653a34ba2c21c7a.omft.near",
+      "symbol": "MOG",
+      "chain": "eth",
+      "contract": "0xaaee1a9723aadb7afa2810263653a34ba2c21c7a",
+      "coinGeckoId": "mog-coin",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kucoin:MOG-USDT",
+          "venue": "kucoin",
+          "symbol": "MOG-USDT",
+          "base": "MOG",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1720080000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/mog-coin/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:56_3NNshCLCt8r8E7x9FoDuiwoNQWgp",
+      "symbol": "EVAA",
+      "chain": "bsc",
+      "contract": "0xaa036928c9c0df07d525b55ea8ee690bb5a628c1",
+      "coinGeckoId": "evaa-protocol",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "gate:EVAA_USDT",
+          "venue": "gate",
+          "symbol": "EVAA_USDT",
+          "base": "EVAA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1759449600000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/evaa-protocol/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:pol-0x7b12598e3616261df1c05ec28de0d2fb10c1f206.omdep.near",
+      "symbol": "COCA",
+      "chain": "pol",
+      "contract": "0x7b12598e3616261df1c05ec28de0d2fb10c1f206",
+      "coinGeckoId": "coca",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "mexc:COCAUSDT",
+          "venue": "mexc",
+          "symbol": "COCAUSDT",
+          "base": "COCA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1733184000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/coca/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:COCA_USD",
+          "venue": "intents",
+          "symbol": "COCA_USD",
+          "base": "COCA",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:aleo.omft.near",
+      "symbol": "ALEO",
+      "chain": "aleo",
+      "contract": null,
+      "coinGeckoId": "aleo",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kraken:ALEOUSD",
+          "venue": "kraken",
+          "symbol": "ALEOUSD",
+          "base": "ALEO",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1769698980000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aleo/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "kraken:ALEOUSDT",
+          "venue": "kraken",
+          "symbol": "ALEOUSDT",
+          "base": "ALEO",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1769699160000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/aleo/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:ALEO_USD",
+          "venue": "intents",
+          "symbol": "ALEO_USD",
+          "base": "ALEO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep245:v2_1.omni.hot.tg:196_11111111111111111111",
+      "symbol": "OKB",
+      "chain": "xlayer",
+      "contract": null,
+      "coinGeckoId": "okb",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "okx:OKB-USDT",
+          "venue": "okx",
+          "symbol": "OKB-USDT",
+          "base": "OKB",
+          "quote": "USDT",
+          "rank": 1,
+          "validFrom": 1521799200000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/okb/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "okx:OKB-USDC",
+          "venue": "okx",
+          "symbol": "OKB-USDC",
+          "base": "OKB",
+          "quote": "USDC",
+          "rank": 2,
+          "validFrom": 1778490000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/okb/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:OKB_USD",
+          "venue": "intents",
+          "symbol": "OKB_USD",
+          "base": "OKB",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:eth-0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c.omft.near",
+      "symbol": "SPX",
+      "chain": "eth",
+      "contract": "0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+      "coinGeckoId": "spx6900",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "bybit:SPXUSDT",
+          "venue": "bybit",
+          "symbol": "SPXUSDT",
+          "base": "SPX",
+          "quote": "USDT",
+          "rank": 1,
+          "validFrom": 1732176000000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/spx6900/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "bybit:SPXUSDC",
+          "venue": "bybit",
+          "symbol": "SPXUSDC",
+          "base": "SPX",
+          "quote": "USDC",
+          "rank": 2,
+          "validFrom": 1758011400000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/spx6900/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:SPX_USD",
+          "venue": "intents",
+          "symbol": "SPX_USD",
+          "base": "SPX",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:sol-d600e625449a4d9380eaf5e3265e54c90d34e260.omft.near",
+      "symbol": "MELANIA",
+      "chain": "sol",
+      "contract": "FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P",
+      "coinGeckoId": "melania-meme",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "kraken:MELANIAUSD",
+          "venue": "kraken",
+          "symbol": "MELANIAUSD",
+          "base": "MELANIA",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1737371640000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/melania-meme/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "kraken:MELANIAUSDT",
+          "venue": "kraken",
+          "symbol": "MELANIAUSDT",
+          "base": "MELANIA",
+          "quote": "USDT",
+          "rank": 2,
+          "validFrom": 1737371640000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/melania-meme/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "kraken:MELANIAUSDC",
+          "venue": "kraken",
+          "symbol": "MELANIAUSDC",
+          "base": "MELANIA",
+          "quote": "USDC",
+          "rank": 3,
+          "validFrom": 1737371640000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/melania-meme/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:blackdragon.tkn.near",
+      "symbol": "BLACKDRAGON",
+      "chain": "near",
+      "contract": "blackdragon.tkn.near",
+      "coinGeckoId": "black-dragon",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:BLACKDRAGON_WNEAR",
+          "venue": "rhea",
+          "symbol": "BLACKDRAGON_WNEAR",
+          "base": "BLACKDRAGON",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776532920000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "blackdragon.tkn.near",
+            "quote": "wrap.near",
+            "baseDecimals": 24,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:BLACKDRAGON_USD",
+          "venue": "intents",
+          "symbol": "BLACKDRAGON_USD",
+          "base": "BLACKDRAGON",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:token.0xshitzu.near",
+      "symbol": "SHITZU",
+      "chain": "near",
+      "contract": "token.0xshitzu.near",
+      "coinGeckoId": "shitzu",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:SHITZU_WNEAR",
+          "venue": "rhea",
+          "symbol": "SHITZU_WNEAR",
+          "base": "SHITZU",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776532920000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "token.0xshitzu.near",
+            "quote": "wrap.near",
+            "baseDecimals": 18,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:SHITZU_USD",
+          "venue": "intents",
+          "symbol": "SHITZU_USD",
+          "base": "SHITZU",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:abg-966.meme-cooking.near",
+      "symbol": "ABG",
+      "chain": "near",
+      "contract": "abg-966.meme-cooking.near",
+      "coinGeckoId": "abg",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:noear-324.meme-cooking.near",
+      "symbol": "NOEAR",
+      "chain": "near",
+      "contract": "noear-324.meme-cooking.near",
+      "coinGeckoId": "noear",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:mpdao-token.near",
+      "symbol": "mpDAO",
+      "chain": "near",
+      "contract": "mpdao-token.near",
+      "coinGeckoId": "meta-pool-dao",
+      "aliases": [
+        "meta-pool"
+      ],
+      "sources": [
+        {
+          "id": "rhea:MPDAO_WNEAR",
+          "venue": "rhea",
+          "symbol": "MPDAO_WNEAR",
+          "base": "mpDAO",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776532980000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "mpdao-token.near",
+            "quote": "wrap.near",
+            "baseDecimals": 6,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:MPDAO_USD",
+          "venue": "intents",
+          "symbol": "MPDAO_USD",
+          "base": "mpDAO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:jambo-1679.meme-cooking.near",
+      "symbol": "JAMBO",
+      "chain": "near",
+      "contract": "jambo-1679.meme-cooking.near",
+      "coinGeckoId": "jambo-2",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:JAMBO_WNEAR",
+          "venue": "rhea",
+          "symbol": "JAMBO_WNEAR",
+          "base": "JAMBO",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776532980000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "jambo-1679.meme-cooking.near",
+            "quote": "wrap.near",
+            "baseDecimals": 18,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:JAMBO_USD",
+          "venue": "intents",
+          "symbol": "JAMBO_USD",
+          "base": "JAMBO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:kat.token0.near",
+      "symbol": "NearKat",
+      "chain": "near",
+      "contract": "kat.token0.near",
+      "coinGeckoId": "nearkat",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:gnear-229.meme-cooking.near",
+      "symbol": "GNEAR",
+      "chain": "near",
+      "contract": "gnear-229.meme-cooking.near",
+      "coinGeckoId": "gnear",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:test-token.highdome3013.near",
+      "symbol": "TESTNEBULA",
+      "chain": "near",
+      "contract": "test-token.highdome3013.near",
+      "coinGeckoId": "testnebula",
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No supported exchange pair admitted by CoinGecko identity, venue listing and catalog price sanity"
+    },
+    {
+      "assetId": "nep141:itlx.intellex_xyz.near",
+      "symbol": "ITLX",
+      "chain": "near",
+      "contract": "itlx.intellex_xyz.near",
+      "coinGeckoId": "itlx",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:ITLX_WNEAR",
+          "venue": "rhea",
+          "symbol": "ITLX_WNEAR",
+          "base": "ITLX",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776533040000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "itlx.intellex_xyz.near",
+            "quote": "wrap.near",
+            "baseDecimals": 24,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:ITLX_USD",
+          "venue": "intents",
+          "symbol": "ITLX_USD",
+          "base": "ITLX",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:cfi.consumer-fi.near",
+      "symbol": "CFI",
+      "chain": "near",
+      "contract": "cfi.consumer-fi.near",
+      "coinGeckoId": "consumerfi-protocol",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:CFI_WNEAR",
+          "venue": "rhea",
+          "symbol": "CFI_WNEAR",
+          "base": "CFI",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776533040000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "cfi.consumer-fi.near",
+            "quote": "wrap.near",
+            "baseDecimals": 18,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:CFI_USD",
+          "venue": "intents",
+          "symbol": "CFI_USD",
+          "base": "CFI",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:npro.nearmobile.near",
+      "symbol": "NPRO",
+      "chain": "near",
+      "contract": "npro.nearmobile.near",
+      "coinGeckoId": "npro",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:NPRO_WNEAR",
+          "venue": "rhea",
+          "symbol": "NPRO_WNEAR",
+          "base": "NPRO",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776533040000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "npro.nearmobile.near",
+            "quote": "wrap.near",
+            "baseDecimals": 24,
+            "quoteDecimals": 24
+          }
+        },
+        {
+          "id": "intents:NPRO_USD",
+          "venue": "intents",
+          "symbol": "NPRO_USD",
+          "base": "NPRO",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1776618540000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:purge-558.meme-cooking.near",
+      "symbol": "PURGE",
+      "chain": "near",
+      "contract": "purge-558.meme-cooking.near",
+      "coinGeckoId": "forgive-me-father",
+      "aliases": [],
+      "sources": [
+        {
+          "id": "rhea:PURGE_WNEAR",
+          "venue": "rhea",
+          "symbol": "PURGE_WNEAR",
+          "base": "PURGE",
+          "quote": "USD",
+          "rank": 1,
+          "validFrom": 1776533100000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://app.rhea.finance",
+          "continuationOf": null,
+          "conversionRatio": "1",
+          "onchain": {
+            "base": "purge-558.meme-cooking.near",
+            "quote": "wrap.near",
+            "baseDecimals": 18,
+            "quoteDecimals": 24
+          }
+        }
+      ],
+      "unavailableReason": null
+    },
+    {
+      "assetId": "nep141:stjack.tkn.primitives.near",
+      "symbol": "STJACK",
+      "chain": "near",
+      "contract": "stjack.tkn.primitives.near",
+      "coinGeckoId": null,
+      "aliases": [],
+      "sources": [],
+      "unavailableReason": "No CoinGecko identity in 1Click catalog"
+    },
+    {
+      "assetId": "nep141:prl.omft.near",
+      "symbol": "PRL",
+      "chain": "prl",
+      "contract": null,
+      "coinGeckoId": "pearl-research",
+      "aliases": [
+        "custom:prl",
+        "pearl-2"
+      ],
+      "sources": [
+        {
+          "id": "safetrade:pearlusdt",
+          "venue": "safetrade",
+          "symbol": "pearlusdt",
+          "base": "PEARL",
+          "quote": "USDT",
+          "rank": 1,
+          "validFrom": 1779505440000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pearl-2/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "safetrade:pearlusdc",
+          "venue": "safetrade",
+          "symbol": "pearlusdc",
+          "base": "PEARL",
+          "quote": "USDC",
+          "rank": 2,
+          "validFrom": 1789687860000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://api.coingecko.com/api/v3/coins/pearl-2/tickers?order=volume_desc&depth=false",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        },
+        {
+          "id": "intents:PRL_USD",
+          "venue": "intents",
+          "symbol": "PRL_USD",
+          "base": "PRL",
+          "quote": "USD",
+          "rank": 100,
+          "validFrom": 1778674860000,
+          "validTo": null,
+          "coinGeckoTickerUrl": "https://explorer.near-intents.org",
+          "continuationOf": null,
+          "conversionRatio": "1"
+        }
+      ],
+      "unavailableReason": null
+    }
+  ],
+  "stablecoins": [
+    "nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+    "nep141:853d955acef822db058eb8505911ed77f175b99e.factory.bridge.near",
+    "nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near",
+    "nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+    "nep141:eth-0x6b175474e89094c44da98b954eedeac495271d0f.omft.near",
+    "nep141:sol-0x936420c6ae310eb29511d139991654f922456fbe.omdep.near",
+    "nep141:hood-0x5fc5360d0400a0fd4f2af552add042d716f1d168.omft.near",
+    "nep141:tron-d28a265909efecdcee7c5028585214ea0b96f015.omft.near",
+    "nep141:sol-c800a4bd850783ccb82c2b2c7e84175443606352.omft.near",
+    "nep141:usdt.tether-token.near",
+    "nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near",
+    "nep141:arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near",
+    "nep141:base-0x833589fcd6edb6e08f4c7c32d4f71b54bda02913.omft.near",
+    "nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+    "nep141:gnosis.omft.near",
+    "nep141:gnosis-0x2a22f9c3b484c3629090feed35f17ff8f88f76f0.omft.near",
+    "nep141:gnosis-0x4ecaba5870353805a9f068101a40e0f32ed605c6.omft.near",
+    "nep245:v2_1.omni.hot.tg:137_qiStmoQJDQPTebaPjgx5VBxZv6L",
+    "nep245:v2_1.omni.hot.tg:137_3hpYoaLtt8MP1Z2GH1U473DMRKgr",
+    "nep245:v2_1.omni.hot.tg:56_2w93GqMcEmQFDru84j3HZZWt557r",
+    "nep245:v2_1.omni.hot.tg:56_2CMMyVTGZkeyNZTSvS5sarzfir6g",
+    "nep141:aptos-88cb7619440a914fe6400149a12b443c3ac21d59.omft.near",
+    "nep141:aptos-34ee497f210c5a511e8d5b53bc56d75b63612bb5.omft.near",
+    "nep245:v2_1.omni.hot.tg:10_359RPSJVdTxwTJT9TyGssr2rFoWo",
+    "nep245:v2_1.omni.hot.tg:10_2R1RXDBxCyJTeMEsdXydh7xsHmz",
+    "nep245:v2_1.omni.hot.tg:10_A2ewyUyDp6qsue1jqZsGypkCxRJ",
+    "nep245:v2_1.omni.hot.tg:43114_372BeH7ENZieCaabwkbWkBiTTgXp",
+    "nep245:v2_1.omni.hot.tg:43114_3atVJH3r5c4GqiSYmg9fECvjc47o",
+    "nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR",
+    "nep141:sui-c1b81ecaf27933252d31a963bc5e9458f13c18ce.omft.near",
+    "nep245:v2_1.omni.hot.tg:1100_111bzQBB65GxAPAVoxqmMcgYo5oS3txhqs1Uh1cgahKQUeTUq1TJu",
+    "nep245:v2_1.omni.hot.tg:143_4EJiJxSALvGoTZbnc8K7Ft9533et",
+    "nep245:v2_1.omni.hot.tg:143_2dmLwYWkCQKyTjeUPAsGJuiVLbFx",
+    "nep141:bera-0x779ded0c9e1022225f8e0630b35a9b54be713736.omft.near",
+    "nep245:v2_1.omni.hot.tg:196_2fezDCvVYRsG8wrK6deJ2VRPiAS1",
+    "nep245:v2_1.omni.hot.tg:196_2dK9kLNR7Ekq7su8FxNGiUW3djTw",
+    "nep141:plasma-0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb.omft.near",
+    "nep245:v2_1.omni.hot.tg:534352_4RG3Q2wFsMQmd45m5m89RjsLfupA",
+    "nep141:eth-0xfa2b947eec368f42195f24f36d2af29f7c24cec2.omft.near",
+    "nep141:eth-0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d.omft.near",
+    "nep141:movement-6f9a70ef4605e7d9174f1abf8d8d3c15012f48f3.omft.near",
+    "nep141:hood-0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34.omft.near",
+    "nep141:miden-0x5cb79d29507d3ad17bb6dc60279e89.omft.near",
+    "1cs_v1:hypercore:hip1:0x6d1e7cde53ba9467b783cb7c530ce054",
+    "1cs_v1:hypercore:erc20:0xb88339CB7199b77E23DB6E890353E22632Ba630f"
+  ]
+}

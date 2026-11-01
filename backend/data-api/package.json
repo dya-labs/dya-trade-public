@@ -1,0 +1,22 @@
+{
+  "name": "data-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "migrate": "bun src/main.ts migrate",
+    "ingest": "bun src/main.ts ingest",
+    "api": "bun src/main.ts api",
+    "verify": "bun src/main.ts verify",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "bun": ">=1.4.4"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.3",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "bun@1.4.4"
+}
