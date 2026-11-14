@@ -1,0 +1,458 @@
+{
+ "source": "Intear log_text (intents.near) 2026-10-15 and FastNEAR tx HL2hc7pZ… (2025-04-30); catalog subset from 1Click /v0/tokens",
+ "tokens": [
+  {
+   "assetId": "nep141:wrap.near",
+   "symbol": "wNEAR",
+   "blockchain": "near",
+   "decimals": 24,
+   "coingeckoId": "wrapped-near"
+  },
+  {
+   "assetId": "nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1",
+   "symbol": "USDC",
+   "blockchain": "near",
+   "decimals": 6,
+   "coingeckoId": "usd-coin"
+  },
+  {
+   "assetId": "nep141:npro.nearmobile.near",
+   "symbol": "NPRO",
+   "blockchain": "near",
+   "decimals": 24,
+   "coingeckoId": "npro"
+  },
+  {
+   "assetId": "nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near",
+   "symbol": "USDT",
+   "blockchain": "eth",
+   "decimals": 6,
+   "coingeckoId": "tether"
+  },
+  {
+   "assetId": "nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near",
+   "symbol": "USDC",
+   "blockchain": "eth",
+   "decimals": 6,
+   "coingeckoId": "usd-coin"
+  },
+  {
+   "assetId": "nep141:eth.omft.near",
+   "symbol": "ETH",
+   "blockchain": "eth",
+   "decimals": 18,
+   "coingeckoId": "ethereum"
+  },
+  {
+   "assetId": "nep141:btc.omft.near",
+   "symbol": "BTC",
+   "blockchain": "btc",
+   "decimals": 8,
+   "coingeckoId": "bitcoin"
+  },
+  {
+   "assetId": "nep141:sol.omft.near",
+   "symbol": "SOL",
+   "blockchain": "sol",
+   "decimals": 9,
+   "coingeckoId": "solana"
+  },
+  {
+   "assetId": "nep141:sol-c58e6539c2f2e097c251f8edf11f9c03e581f8d4.omft.near",
+   "symbol": "TRUMP",
+   "blockchain": "sol",
+   "decimals": 6,
+   "coingeckoId": "official-trump"
+  },
+  {
+   "assetId": "nep141:tron.omft.near",
+   "symbol": "TRX",
+   "blockchain": "tron",
+   "decimals": 6,
+   "coingeckoId": "tron"
+  },
+  {
+   "assetId": "nep245:v2_1.omni.hot.tg:1117_",
+   "symbol": "GRAM",
+   "blockchain": "ton",
+   "decimals": 9,
+   "coingeckoId": "the-open-network"
+  },
+  {
+   "assetId": "nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near",
+   "symbol": "USDC",
+   "blockchain": "arb",
+   "decimals": 6,
+   "coingeckoId": "usd-coin"
+  },
+  {
+   "assetId": "nep141:arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near",
+   "symbol": "USDT0",
+   "blockchain": "arb",
+   "decimals": 6,
+   "coingeckoId": "usdt0"
+  },
+  {
+   "assetId": "nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near",
+   "symbol": "USDC",
+   "blockchain": "sol",
+   "decimals": 6,
+   "coingeckoId": "usd-coin"
+  },
+  {
+   "assetId": "nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR",
+   "symbol": "USDT",
+   "blockchain": "ton",
+   "decimals": 6,
+   "coingeckoId": "tether"
+  }
+ ],
+ "receipts": {
+  "simple": [
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"E82PWnBpb9SiZJEkkYo5a7iEa28qRD6pDW4p5FuMhmdW\",\"account_id\":\"blockzen-1-main.near\",\"diff\":{\"nep141:eth.omft.near\":\"1249571609896965\",\"nep141:sol.omft.near\":\"-28776941\"},\"fees_collected\":{\"nep141:sol.omft.near\":\"29\"}}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"transfer\",\"data\":[{\"intent_hash\":\"DJvkXK23PsVNqkC9HM21bucd2HY85LJK3jibMZ92btxr\",\"account_id\":\"824ffeb7b8a5c11a96845503894731aa87bad638c186f91e8f730a0552e7d4c4\",\"receiver_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"tokens\":{\"nep141:wrap.near\":\"1949317738910374013667\"}}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"hc3PdD9qirNF2D8y2txSPTZZ84bwLL1pA65d2Jrdjmx\",\"account_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"diff\":{\"nep141:eth.omft.near\":\"-1249572859469825\",\"nep141:sol.omft.near\":\"28776912\"},\"referral\":\"1click-swapkit\",\"fees_collected\":{\"nep141:eth.omft.near\":\"1249572860\"}}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"transfer\",\"data\":[{\"intent_hash\":\"hc3PdD9qirNF2D8y2txSPTZZ84bwLL1pA65d2Jrdjmx\",\"account_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"receiver_id\":\"2f09a4dc4b29cfdfe5d7a14afb04f0aa6c68e0b54f3bb606b168919b68085059\",\"tokens\":{\"nep141:eth.omft.near\":\"8837710000000\"}}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"transfer\",\"data\":[{\"intent_hash\":\"hc3PdD9qirNF2D8y2txSPTZZ84bwLL1pA65d2Jrdjmx\",\"account_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"receiver_id\":\"609214950ce11a0c38e0d562c8575285fc29770a86cd16259831ab009b1392c6\",\"tokens\":{\"nep141:eth.omft.near\":\"4119430530175\"}}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"storage_deposit\",\"data\":[{\"intent_hash\":\"hc3PdD9qirNF2D8y2txSPTZZ84bwLL1pA65d2Jrdjmx\",\"account_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"contract_id\":\"omni.bridge.near\",\"deposit_for_account_id\":\"bbb573d84f89d5a6e319d5246d6d389867836f028d294bdf9a1fe2f3eb740610\",\"amount\":\"1949317738910374013667\"}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"ft_withdraw\",\"data\":[{\"intent_hash\":\"hc3PdD9qirNF2D8y2txSPTZZ84bwLL1pA65d2Jrdjmx\",\"account_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"token\":\"sol.omft.near\",\"receiver_id\":\"omni.bridge.near\",\"amount\":\"28776912\",\"msg\":\"{\\\"recipient\\\":\\\"sol:DeqULyghAkJwy5tbKBviECy2ziivDeNoCuv28b2AcfgJ\\\",\\\"fee\\\":\\\"0\\\",\\\"native_token_fee\\\":\\\"1949317738910374013667\\\",\\\"external_id\\\":\\\"d656413a-bb6e-4804-89ab-4512a2d9878d\\\"}\",\"min_gas\":\"37400000000000\"}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"intents_executed\",\"data\":[{\"intent_hash\":\"E82PWnBpb9SiZJEkkYo5a7iEa28qRD6pDW4p5FuMhmdW\",\"account_id\":\"blockzen-1-main.near\",\"nonce\":\"XJfUGwfPsWDX0xSn8n+f8j7pMm+tPg0c0tl9IPj58q0=\"},{\"intent_hash\":\"DJvkXK23PsVNqkC9HM21bucd2HY85LJK3jibMZ92btxr\",\"account_id\":\"824ffeb7b8a5c11a96845503894731aa87bad638c186f91e8f730a0552e7d4c4\",\"nonce\":\"Vij2xgAlKBKzAJo2FdnB3hjCapJf9jmYf0q4e/JJEC8=\"},{\"intent_hash\":\"hc3PdD9qirNF2D8y2txSPTZZ84bwLL1pA65d2Jrdjmx\",\"account_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"nonce\":\"Vij2xgAlKBKzgIgWDufB3hiUgALUezs069qX3wP2G2I=\"}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_transfer\",\"data\":[{\"old_owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"new_owner_id\":\"blockzen-1-main.near\",\"token_ids\":[\"nep141:eth.omft.near\"],\"amounts\":[\"1249571609896965\"]},{\"old_owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"new_owner_id\":\"609214950ce11a0c38e0d562c8575285fc29770a86cd16259831ab009b1392c6\",\"token_ids\":[\"nep141:eth.omft.near\"],\"amounts\":[\"4119430530175\"]},{\"old_owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"new_owner_id\":\"2f09a4dc4b29cfdfe5d7a14afb04f0aa6c68e0b54f3bb606b168919b68085059\",\"token_ids\":[\"nep141:eth.omft.near\"],\"amounts\":[\"8837710000000\"]},{\"old_owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"new_owner_id\":\"7066024d3f20f94de601c003163367873cca78507eeca4df66d9be645f197f05\",\"token_ids\":[\"nep141:eth.omft.near\"],\"amounts\":[\"1249572860\"]},{\"old_owner_id\":\"blockzen-1-main.near\",\"new_owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"token_ids\":[\"nep141:sol.omft.near\"],\"amounts\":[\"28776912\"]},{\"old_owner_id\":\"blockzen-1-main.near\",\"new_owner_id\":\"7066024d3f20f94de601c003163367873cca78507eeca4df66d9be645f197f05\",\"token_ids\":[\"nep141:sol.omft.near\"],\"amounts\":[\"29\"]},{\"old_owner_id\":\"824ffeb7b8a5c11a96845503894731aa87bad638c186f91e8f730a0552e7d4c4\",\"new_owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"1949317738910374013667\"]}]}"
+   },
+   {
+    "block_height": 220103602,
+    "block_timestamp_nanosec": "1792082720582909248",
+    "transaction_id": "p7WiJZ4Etbw8sHB8iRGEFqFBvDfnWbZcGw3zcZi6uQ8",
+    "receipt_id": "CWVEJzCh3oPnjgyTxkuToRRzh4Y143qkb3ssLzXNZBga",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_burn\",\"data\":[{\"owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"1949317738910374013667\"],\"memo\":\"withdraw\"},{\"owner_id\":\"57b0255180a7d96451c051304a4acad1f13e9a758ec45d78ece483d205078fe9\",\"token_ids\":[\"nep141:sol.omft.near\"],\"amounts\":[\"28776912\"],\"memo\":\"withdraw\"}]}"
+   }
+  ],
+  "routeViaStablecoin": [
+   {
+    "block_height": 220070268,
+    "block_timestamp_nanosec": "1792063074594853358",
+    "transaction_id": "B9NCMbZUz3s8zCBNRwEhrEvVtpPkJqCo4kokk1UynXK8",
+    "receipt_id": "9zGX3j9edE8pkvCmKRiUrBxnnLRpdBAWKt5G2KbHrq3u",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"48FdmLvsTsGRuwxaG6eHG4eu71Xb411aJ5Rwy2B32HYv\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-19867571\",\"nep141:eth.omft.near\":\"8403737811101387\"},\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"20\"}}]}"
+   },
+   {
+    "block_height": 220070268,
+    "block_timestamp_nanosec": "1792063074594853358",
+    "transaction_id": "B9NCMbZUz3s8zCBNRwEhrEvVtpPkJqCo4kokk1UynXK8",
+    "receipt_id": "9zGX3j9edE8pkvCmKRiUrBxnnLRpdBAWKt5G2KbHrq3u",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"5t32VHEPQTTtphoxrkZekGBmSf9rCrg6ApeRL66G2YFd\",\"account_id\":\"6247d9c671ca6a80cf2c75e26edb8cd75ebf00fcd3c56c39107d6ca20c9cfb29\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"19867551\",\"nep141:tron.omft.near\":\"-59880625\"},\"fees_collected\":{\"nep141:tron.omft.near\":\"60\"}}]}"
+   },
+   {
+    "block_height": 220070268,
+    "block_timestamp_nanosec": "1792063074594853358",
+    "transaction_id": "B9NCMbZUz3s8zCBNRwEhrEvVtpPkJqCo4kokk1UynXK8",
+    "receipt_id": "9zGX3j9edE8pkvCmKRiUrBxnnLRpdBAWKt5G2KbHrq3u",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"7p4EqM5b4p72Hs2D1w2VZwZgzsTv7WTE3QAo4Jv2pYqD\",\"account_id\":\"7b0dda0307bdc7146dc1a720fac6de6109f05ed2b8758b85aac4ca444238b2a8\",\"diff\":{\"nep141:eth.omft.near\":\"-8403746214847602\",\"nep141:tron.omft.near\":\"59880565\"},\"referral\":\"1click-swapkit\",\"fees_collected\":{\"nep141:eth.omft.near\":\"8403746215\"}}]}"
+   }
+  ],
+  "solverNettingThroughItself": [
+   {
+    "block_height": 220070221,
+    "block_timestamp_nanosec": "1792063047036928573",
+    "transaction_id": "7qtjScM2xmb2q8xmZSQmadL8J8hjmtufLEYbp3QfsoUD",
+    "receipt_id": "74qYuwAeMhXZXzQqV687Bar1metDmVDCxzQV3GqSYk6z",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"6QadKPDDcM3LTPmR82y3R2PcH98kbJw2nfwuTFKzvKEp\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-35988640\",\"nep141:sol-c58e6539c2f2e097c251f8edf11f9c03e581f8d4.omft.near\":\"19816288\"},\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"36\"}}]}"
+   },
+   {
+    "block_height": 220070221,
+    "block_timestamp_nanosec": "1792063047036928573",
+    "transaction_id": "7qtjScM2xmb2q8xmZSQmadL8J8hjmtufLEYbp3QfsoUD",
+    "receipt_id": "74qYuwAeMhXZXzQqV687Bar1metDmVDCxzQV3GqSYk6z",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"BXf84f6R6R3FvLURCr2QE7Lv8on482Y2Mz6jZtwBqWBw\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"35988604\",\"nep141:eth.omft.near\":\"-15192197416244083\"},\"fees_collected\":{\"nep141:eth.omft.near\":\"15192197417\"}}]}"
+   },
+   {
+    "block_height": 220070221,
+    "block_timestamp_nanosec": "1792063047036928573",
+    "transaction_id": "7qtjScM2xmb2q8xmZSQmadL8J8hjmtufLEYbp3QfsoUD",
+    "receipt_id": "74qYuwAeMhXZXzQqV687Bar1metDmVDCxzQV3GqSYk6z",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"958HEmFSmy877X7Yx5vdYFTi2SNY1JEYs3i8jWr7ZHPL\",\"account_id\":\"d317e1273204aeb4b794c8a2f510878819640e1bb738b9dbbb1725784bb5dbb5\",\"diff\":{\"nep141:eth.omft.near\":\"15192182224046666\",\"nep141:sol-c58e6539c2f2e097c251f8edf11f9c03e581f8d4.omft.near\":\"-19816308\"},\"referral\":\"1click-rango\",\"fees_collected\":{\"nep141:sol-c58e6539c2f2e097c251f8edf11f9c03e581f8d4.omft.near\":\"20\"}}]}"
+   }
+  ],
+  "stablecoinCycle": [
+   {
+    "block_height": 220070473,
+    "block_timestamp_nanosec": "1792063197499859856",
+    "transaction_id": "J2Wy8QmA3HgmKn7skWqmn53mXEEvua9nwJygDWuN81Wj",
+    "receipt_id": "HzNA6gMYCseTrBBLLAxet9VczsPc38ovBK3D6BihiMiz",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"2Pagx2yPjWfq1EtaYcuC38rjdrbUZpN7jNh2Gu1MdNWg\",\"account_id\":\"crux-solver.near\",\"diff\":{\"nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1\":\"137294335\",\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-137430346\"},\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"138\"}}]}"
+   },
+   {
+    "block_height": 220070473,
+    "block_timestamp_nanosec": "1792063197499859856",
+    "transaction_id": "J2Wy8QmA3HgmKn7skWqmn53mXEEvua9nwJygDWuN81Wj",
+    "receipt_id": "HzNA6gMYCseTrBBLLAxet9VczsPc38ovBK3D6BihiMiz",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"F9jbGywBhz2dABpRCHfDqnRBpyo3wTSV6Fs2zQZFrBqb\",\"account_id\":\"0x94845333028b1204fbe14e1278fd4adde46b22ce.near\",\"diff\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"-137286181\",\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"137430208\"},\"fees_collected\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"138\"}}]}"
+   },
+   {
+    "block_height": 220070473,
+    "block_timestamp_nanosec": "1792063197499859856",
+    "transaction_id": "J2Wy8QmA3HgmKn7skWqmn53mXEEvua9nwJygDWuN81Wj",
+    "receipt_id": "HzNA6gMYCseTrBBLLAxet9VczsPc38ovBK3D6BihiMiz",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"HpSej4zee3Mv9KERhjTYg6aScdZkZRxqrUVRZbzzG3Pp\",\"account_id\":\"blockzen-1-main.near\",\"diff\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"137286043\",\"nep141:wrap.near\":\"-30018713838158296405268800\"},\"fees_collected\":{\"nep141:wrap.near\":\"30018713838158296406\"}}]}"
+   },
+   {
+    "block_height": 220070473,
+    "block_timestamp_nanosec": "1792063197499859856",
+    "transaction_id": "J2Wy8QmA3HgmKn7skWqmn53mXEEvua9nwJygDWuN81Wj",
+    "receipt_id": "HzNA6gMYCseTrBBLLAxet9VczsPc38ovBK3D6BihiMiz",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"4tThRpmwc6rkYwpT3QFTCCoYiA8Cjok6Sb377D7BowJz\",\"account_id\":\"8694473d430f3f20cc2dea2af57e9679748386b2370a493368ff0b7ca28e7b60\",\"diff\":{\"nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1\":\"-137294473\",\"nep141:wrap.near\":\"30018683819444458246972394\"},\"referral\":\"1click-unknown\",\"fees_collected\":{\"nep141:17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1\":\"138\"}}]}"
+   }
+  ],
+  "userBridgeAndSwap": [
+   {
+    "block_height": 220070256,
+    "block_timestamp_nanosec": "1792063067874855382",
+    "transaction_id": "5BNRdy6ehjfRynup98yr6pL2BCohXyyjT1wgEGajQCgB",
+    "receipt_id": "2ov2td7AYdQvUEtzri84rHMyiF4CoY1PAvaAfZNmfxUt",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"FfkoeHqdWvs9pr87k2bncx5XzcuvXNovuQX6Jm448mYU\",\"account_id\":\"solver-multichain-asset.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"942726853\",\"nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR\":\"-942632580\"},\"fees_collected\":{\"nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR\":\"943\"}}]}"
+   },
+   {
+    "block_height": 220070256,
+    "block_timestamp_nanosec": "1792063067874855382",
+    "transaction_id": "5BNRdy6ehjfRynup98yr6pL2BCohXyyjT1wgEGajQCgB",
+    "receipt_id": "2ov2td7AYdQvUEtzri84rHMyiF4CoY1PAvaAfZNmfxUt",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"4uiBQqEw6y9RQZrMQUsJjCE5d4sLn9DMACNw9GgZL5zU\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"55148\",\"nep245:v2_1.omni.hot.tg:1117_\":\"-40000041\"},\"fees_collected\":{\"nep245:v2_1.omni.hot.tg:1117_\":\"41\"}}]}"
+   },
+   {
+    "block_height": 220070256,
+    "block_timestamp_nanosec": "1792063067874855382",
+    "transaction_id": "5BNRdy6ehjfRynup98yr6pL2BCohXyyjT1wgEGajQCgB",
+    "receipt_id": "2ov2td7AYdQvUEtzri84rHMyiF4CoY1PAvaAfZNmfxUt",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"4sk5f4iHjpnuHTA9Xh9UzcxHbThwD34jQcVnmmwBniBM\",\"account_id\":\"solver-multichain-asset.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-55149\",\"nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR\":\"55155\"},\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"1\"}}]}"
+   },
+   {
+    "block_height": 220070256,
+    "block_timestamp_nanosec": "1792063067874855382",
+    "transaction_id": "5BNRdy6ehjfRynup98yr6pL2BCohXyyjT1wgEGajQCgB",
+    "receipt_id": "2ov2td7AYdQvUEtzri84rHMyiF4CoY1PAvaAfZNmfxUt",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"H7MbchmmZshFkkjGbYrkYTRTij9iULBm6ppaER5wZH5s\",\"account_id\":\"2c8dfe4ff4b7824ab2653ce6c8aedb9f7f6eb7cac764fbabd9a7213a4dd3a31a\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-942727796\",\"nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR\":\"942631637\"},\"referral\":\"1click-swapkit\",\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"943\"}}]}"
+   },
+   {
+    "block_height": 220070256,
+    "block_timestamp_nanosec": "1792063067874855382",
+    "transaction_id": "5BNRdy6ehjfRynup98yr6pL2BCohXyyjT1wgEGajQCgB",
+    "receipt_id": "2ov2td7AYdQvUEtzri84rHMyiF4CoY1PAvaAfZNmfxUt",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"H7MbchmmZshFkkjGbYrkYTRTij9iULBm6ppaER5wZH5s\",\"account_id\":\"2c8dfe4ff4b7824ab2653ce6c8aedb9f7f6eb7cac764fbabd9a7213a4dd3a31a\",\"diff\":{\"nep245:v2_1.omni.hot.tg:1117_\":\"40000000\",\"nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR\":\"-55156\"},\"referral\":\"1click-swapkit\",\"fees_collected\":{\"nep245:v2_1.omni.hot.tg:1117_3tsdfyziyc7EJbP2aULWSKU4toBaAcN4FdTgfm5W1mC4ouR\":\"1\"}}]}"
+   }
+  ],
+  "feeConversion1cs": [
+   {
+    "block_height": 220070414,
+    "block_timestamp_nanosec": "1792063162023858435",
+    "transaction_id": "DRZnaGrwVV2x13aiv1Fayuw2y3iLdSqTbqzykajTeSNc",
+    "receipt_id": "4CthXsHKW3hL1TSXQGkXo9n8bRcDEYXrtyMToCmh3J48",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"2G8UCnReDaSpwXp4jUwm3zkdFbjoWdzHvQYf33AZfydP\",\"account_id\":\"solver-multichain-asset.near\",\"diff\":{\"nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near\":\"2690783\",\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"-2690514\"},\"fees_collected\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"3\"}}]}"
+   },
+   {
+    "block_height": 220070414,
+    "block_timestamp_nanosec": "1792063162023858435",
+    "transaction_id": "DRZnaGrwVV2x13aiv1Fayuw2y3iLdSqTbqzykajTeSNc",
+    "receipt_id": "4CthXsHKW3hL1TSXQGkXo9n8bRcDEYXrtyMToCmh3J48",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"Cb5FsV7HhnG2iZ4NcAPB1Zgnz2uY3vrA4NVWiTWNbpwH\",\"account_id\":\"brlabs-solver.near\",\"diff\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"2690511\",\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-2693249\"},\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"3\"}}]}"
+   },
+   {
+    "block_height": 220070414,
+    "block_timestamp_nanosec": "1792063162023858435",
+    "transaction_id": "DRZnaGrwVV2x13aiv1Fayuw2y3iLdSqTbqzykajTeSNc",
+    "receipt_id": "4CthXsHKW3hL1TSXQGkXo9n8bRcDEYXrtyMToCmh3J48",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"2129puftAMDWQJCeBncNe2GyTuhTV6xZRX7JNyRaWX8u\",\"account_id\":\"brlabs-solver.near\",\"diff\":{\"nep141:arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near\":\"-2693014\",\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"2693246\"},\"fees_collected\":{\"nep141:arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near\":\"3\"}}]}"
+   },
+   {
+    "block_height": 220070414,
+    "block_timestamp_nanosec": "1792063162023858435",
+    "transaction_id": "DRZnaGrwVV2x13aiv1Fayuw2y3iLdSqTbqzykajTeSNc",
+    "receipt_id": "4CthXsHKW3hL1TSXQGkXo9n8bRcDEYXrtyMToCmh3J48",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"HpPnS95q2FW3j6pLEHHmUAWbSHyKdVdJ7GMXiENjwiV4\",\"account_id\":\"blockzen-1-main.near\",\"diff\":{\"nep141:arb-0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9.omft.near\":\"2693011\",\"nep141:wrap.near\":\"-587119473127519866779658\"},\"fees_collected\":{\"nep141:wrap.near\":\"587119473127519867\"}}]}"
+   },
+   {
+    "block_height": 220070414,
+    "block_timestamp_nanosec": "1792063162023858435",
+    "transaction_id": "DRZnaGrwVV2x13aiv1Fayuw2y3iLdSqTbqzykajTeSNc",
+    "receipt_id": "4CthXsHKW3hL1TSXQGkXo9n8bRcDEYXrtyMToCmh3J48",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"5oBUkSxN4Et1hpVt9paugAD6xkczAEBjBGS6R41smNE1\",\"account_id\":\"5880ad2b362620fadf759cbceb1cd5737ce8c6ed7fb8e9942881e6731f9247dd\",\"diff\":{\"nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near\":\"-2690786\",\"nep141:wrap.near\":\"587118886008046739259791\"},\"referral\":\"1click-1cs\",\"fees_collected\":{\"nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near\":\"3\"}}]}"
+   }
+  ],
+  "protocolFees": [
+   {
+    "block_height": 220070332,
+    "block_timestamp_nanosec": "1792063112086550149",
+    "transaction_id": "5QpeDWFC1rA2kAwPEsMJZQDBj34Pn8gngrFjxEJBws7F",
+    "receipt_id": "Gcfqqfw5MQjAC67kBD7do5Yi8gTbEBb45AxUK2zBcu5s",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"FnCdA7TaDGdbH1s5F42sPwadHfng3QF8kEhFsahAK1g1\",\"account_id\":\"solver-ref.near\",\"diff\":{\"nep141:npro.nearmobile.near\":\"70194142690058555587\",\"nep141:wrap.near\":\"-5090610105409566943\"},\"fees_collected\":{\"nep141:wrap.near\":\"5090610105410\"}}]}"
+   },
+   {
+    "block_height": 220070332,
+    "block_timestamp_nanosec": "1792063112086550149",
+    "transaction_id": "5QpeDWFC1rA2kAwPEsMJZQDBj34Pn8gngrFjxEJBws7F",
+    "receipt_id": "Gcfqqfw5MQjAC67kBD7do5Yi8gTbEBb45AxUK2zBcu5s",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"EwaYZXMmSrx8NLaA6RaznrjU8SpvD6kDeSXtAgNfYXMg\",\"account_id\":\"7066024d3f20f94de601c003163367873cca78507eeca4df66d9be645f197f05\",\"diff\":{\"nep141:npro.nearmobile.near\":\"-70194212884271439859\",\"nep141:wrap.near\":\"5090605014799461533\"},\"referral\":\"1click-protocol-fees\",\"fees_collected\":{\"nep141:npro.nearmobile.near\":\"70194212884272\"}}]}"
+   }
+  ],
+  "bridge": [
+   {
+    "block_height": 220070216,
+    "block_timestamp_nanosec": "1792063044275632843",
+    "transaction_id": "FrikZtBQptJwYwzsw6pS9PEubet2DuttwxyzqtQQpUf7",
+    "receipt_id": "A6ZwYhdVqFt7g5RmYGoh8RD8S23qXgLaRb6geWkp44wR",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"9rvyqV4yFfN9Z8KtNPumNPEZiRkTvYmvPQhcj8x6BVki\",\"account_id\":\"blockzen-1-main.near\",\"diff\":{\"nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near\":\"-9174020\",\"nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near\":\"9174837\"},\"fees_collected\":{\"nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near\":\"10\"}}]}"
+   },
+   {
+    "block_height": 220070216,
+    "block_timestamp_nanosec": "1792063044275632843",
+    "transaction_id": "FrikZtBQptJwYwzsw6pS9PEubet2DuttwxyzqtQQpUf7",
+    "receipt_id": "A6ZwYhdVqFt7g5RmYGoh8RD8S23qXgLaRb6geWkp44wR",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.4.3\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"6jPspGguir14dbqkKPoD7wwajNEPjE6V1Wbq6k4Xt5Fd\",\"account_id\":\"c1fc8256eb3f202b87c7d1a0337db795e3479834ac082e0eae9d0b23f190f984\",\"diff\":{\"nep141:arb-0xaf88d065e77c8cc2239327c5edb3a432268e5831.omft.near\":\"9174010\",\"nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near\":\"-9174847\"},\"referral\":\"1click-unknown\",\"fees_collected\":{\"nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near\":\"10\"}}]}"
+   }
+  ],
+  "version021": [
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.2.1\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"HMpaNZ19r5j8FXTEkgHZetaLHaYn6fH6iRKL7QBo49vS\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:btc.omft.near\":\"10999\",\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"-10335157\"},\"fees_collected\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"11\"}}]}"
+   },
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.2.1\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"9VhxEFJyivCaQeHcYd1jhJXrwgg9L8JnAToY4dbr4gth\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\":\"10335146\",\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"-10335146\"},\"fees_collected\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"11\"}}]}"
+   },
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.2.1\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"DkM41oWEb1VJafSnDSYGakwwqvYfkVdJjbRUAmTgfuoh\",\"account_id\":\"solver-priv-liq.near\",\"diff\":{\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\":\"10335135\",\"nep141:wrap.near\":\"-4189840240056818181818180\"},\"fees_collected\":{\"nep141:wrap.near\":\"4189840240056818182\"}}]}"
+   },
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.2.1\",\"event\":\"token_diff\",\"data\":[{\"intent_hash\":\"EXEqH7pLTA4yTaoPRRtmcuopmxYMVVFShaaymxMRWMm7\",\"account_id\":\"9205599d40c0a91cfc4805556bd9247534fc1bf3771f150e988215286eaea116\",\"diff\":{\"nep141:btc.omft.near\":\"-11000\",\"nep141:wrap.near\":\"4189836050216578124999998\"},\"referral\":\"referral\",\"fees_collected\":{\"nep141:btc.omft.near\":\"1\"}}]}"
+   },
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"dip4\",\"version\":\"0.2.1\",\"event\":\"intents_executed\",\"data\":[{\"intent_hash\":\"HMpaNZ19r5j8FXTEkgHZetaLHaYn6fH6iRKL7QBo49vS\",\"account_id\":\"solver-priv-liq.near\"},{\"intent_hash\":\"9VhxEFJyivCaQeHcYd1jhJXrwgg9L8JnAToY4dbr4gth\",\"account_id\":\"solver-priv-liq.near\"},{\"intent_hash\":\"DkM41oWEb1VJafSnDSYGakwwqvYfkVdJjbRUAmTgfuoh\",\"account_id\":\"solver-priv-liq.near\"},{\"intent_hash\":\"EXEqH7pLTA4yTaoPRRtmcuopmxYMVVFShaaymxMRWMm7\",\"account_id\":\"9205599d40c0a91cfc4805556bd9247534fc1bf3771f150e988215286eaea116\"}]}"
+   },
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_transfer\",\"data\":[{\"old_owner_id\":\"9205599d40c0a91cfc4805556bd9247534fc1bf3771f150e988215286eaea116\",\"new_owner_id\":\"defuse-ops.near\",\"token_ids\":[\"nep141:btc.omft.near\"],\"amounts\":[\"1\"]},{\"old_owner_id\":\"9205599d40c0a91cfc4805556bd9247534fc1bf3771f150e988215286eaea116\",\"new_owner_id\":\"solver-priv-liq.near\",\"token_ids\":[\"nep141:btc.omft.near\"],\"amounts\":[\"10999\"]},{\"old_owner_id\":\"solver-priv-liq.near\",\"new_owner_id\":\"9205599d40c0a91cfc4805556bd9247534fc1bf3771f150e988215286eaea116\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"4189836050216578124999998\"]},{\"old_owner_id\":\"solver-priv-liq.near\",\"new_owner_id\":\"defuse-ops.near\",\"token_ids\":[\"nep141:wrap.near\",\"nep141:eth-0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.omft.near\",\"nep141:eth-0xdac17f958d2ee523a2206206994597c13d831ec7.omft.near\"],\"amounts\":[\"4189840240056818182\",\"11\",\"11\"]}]}"
+   },
+   {
+    "block_height": 145451993,
+    "block_timestamp_nanosec": "1746042695405319000",
+    "transaction_id": "HL2hc7pZCFPV2REZc9RLxz6u5kDZibRssTnzjitR5CEp",
+    "receipt_id": "BbU9ktJg8c2RQpP5v1zKxin4Qaj3yZxpWVSq8hnFb2Vb",
+    "account_id": "intents.near",
+    "log_text": "EVENT_JSON:{\"standard\":\"nep245\",\"version\":\"1.0.0\",\"event\":\"mt_burn\",\"data\":[{\"owner_id\":\"9205599d40c0a91cfc4805556bd9247534fc1bf3771f150e988215286eaea116\",\"token_ids\":[\"nep141:wrap.near\"],\"amounts\":[\"4189836050216578124999998\"],\"memo\":\"withdraw\"}]}"
+   }
+  ]
+ }
+}

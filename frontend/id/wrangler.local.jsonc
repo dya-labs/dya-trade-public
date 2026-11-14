@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dya-id-local",
+  "compatibility_date": "2026-10-02",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "vinext/server/fetch-handler",
+  "assets": {
+    "directory": "dist/client",
+    "not_found_handling": "none",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "DYA_ID_LOCAL_RECOVERY": "1",
+    "APP_ORIGIN": "http://localhost:3101",
+    "DYA_TERMINAL_ORIGIN": "http://localhost:3100",
+    "PASSKEY_RP_ID": "localhost",
+    "TERMINAL_STORAGE": "d1",
+    "DYA_ID_D1_QUERY_PROFILE": "paid"
+  },
+  "d1_databases": [
+    {
+      "binding": "DYA_ID_DB",
+      "database_name": "dya-id-local",
+      "database_id": "00000000-0000-0000-0000-000000000001",
+      "migrations_dir": "../../backend/id/d1-migrations",
+      "remote": false
+    }
+  ]
+}

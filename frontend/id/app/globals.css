@@ -1,0 +1,7 @@
+@import "@dya/ui/globals.css";
+
+/* Embedded wallet frames paint their own backdrop and surface. */
+html:has([data-wallet-embedded="true"]),
+body:has([data-wallet-embedded="true"]) { background: transparent; }
+
+@source "../../../packages/wallet-ui/src";

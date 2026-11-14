@@ -1,0 +1,100 @@
+@import "@fontsource-variable/geist-mono";
+@import "@dya/ui/globals.css";
+@source "../../../packages/wallet-react/src";
+/* Storybook renders the real hosted wallet screens. */
+@source "../../id/components";
+
+:root {
+  --font-geist-mono: "Geist Mono Variable", ui-monospace, monospace;
+}
+
+@layer components {
+  .dia-panel {
+    background: var(--card);
+    border-radius: var(--radius-panel);
+    outline: 1px solid var(--panel-border);
+    outline-offset: -1px;
+  }
+  .order-size-slider {
+    appearance: none;
+    background: transparent;
+  }
+  .order-size-slider::-webkit-slider-runnable-track {
+    height: 4px;
+    background: transparent;
+  }
+  .order-size-slider::-moz-range-track {
+    height: 4px;
+    background: transparent;
+  }
+  .order-size-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    border: 2px solid var(--card);
+    border-radius: 50%;
+    background: var(--primary);
+  }
+  .order-size-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--card);
+    border-radius: 50%;
+    background: var(--primary);
+  }
+}
+
+/* The footer's Vela link is the chart's attribution where the footer shows; below `sm` the chart
+   keeps Vela's own mark. */
+@media (min-width: 40rem) {
+  .vela-attribution {
+    display: none;
+  }
+}
+
+/* Vela's drawing toolbar at TradingView's size: a 52px rail of 38px rows, 28px icons on a
+   34px hover square. Unlayered so it beats Vela's `vela.chrome` layer; `!important` only where
+   Vela sets inline styles (rail width and gap, icon box, dividers). */
+.vela-dtb:not([data-collapsed="1"]) {
+  width: 52px !important;
+  gap: 0 !important;
+}
+.vela-dtb-btn,
+.vela-dtb-cell {
+  height: 38px;
+}
+.vela-dtb-icon {
+  width: 34px;
+  height: 38px;
+}
+.vela-dtb:not([data-collapsed="1"]) .vela-dtb-hit:not(.vela-dtb-hit--arrow) {
+  width: 34px;
+  height: 34px;
+}
+.vela-dtb-btn:not(.vela-dtb-collapse) .vela-dtb-hit > span,
+.vela-dtb-icon .vela-dtb-hit > span {
+  width: 28px !important;
+  height: 28px !important;
+}
+/* Vela's 24-unit glyphs stroke at 1.8; at 28px that is heavier than TradingView's hairlines. */
+.vela-dtb-hit:not(.vela-dtb-hit--arrow) svg {
+  stroke-width: 1.2;
+}
+/* The chevron fits the 9px beside the hover square, as TradingView's does. */
+.vela-dtb-hit--arrow {
+  width: 9px;
+  height: 28px;
+}
+.vela-dtb-hit--arrow > span {
+  width: 9px !important;
+}
+.vela-dtb-arrow {
+  inset-inline-end: 0;
+}
+.vela-dtb > div:not([class]) {
+  width: 36px !important;
+  margin: 4px auto !important;
+}
+
+@source "../../../packages/wallet-ui/src";

@@ -1,0 +1,3 @@
+export function CarouselProgress({ labels, current, onSelect }: { labels: string[]; current: number; onSelect: (index: number) => void }) {
+  return <div className="flex justify-center -space-x-1" aria-label="Explanation steps">{labels.map((label, index) => <button key={label} type="button" aria-label={`Step ${index + 1}: ${label}`} aria-current={current === index ? "step" : undefined} onClick={() => onSelect(index)} className="flex size-6 items-center justify-center rounded-full outline-none focus-visible:ring-2 focus-visible:ring-ring"><span className={`h-1.5 rounded-full transition-[width,background-color] duration-150 ease-out motion-reduce:transition-none ${current === index ? "w-3 bg-foreground" : "w-1.5 bg-foreground/20"}`} /></button>)}</div>;
+}

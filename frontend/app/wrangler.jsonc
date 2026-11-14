@@ -1,0 +1,23 @@
+// Terminal Worker for local development. Origins come from vars here or from .env.local.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dya-trade",
+  // Node compatibility is on by default for this date; the access gate and Jev rely on node:crypto, Buffer and process.env.
+  "compatibility_date": "2026-10-02",
+  "main": "worker/index.ts",
+  "assets": {
+    "directory": "dist/client",
+    "not_found_handling": "single-page-application",
+    "binding": "ASSETS",
+    // The internal access gate covers every path, including assets.
+    "run_worker_first": true
+  },
+  // Workers Logs keep our structured console events (request.error with its request ID).
+  // Invocation logs and traces are off: they record request URLs, and wallet callback URLs carry one-time codes.
+  "observability": { "enabled": true, "logs": { "enabled": true, "invocation_logs": false }, "traces": { "enabled": false } },
+  "vars": {
+    "APP_ORIGIN": "http://localhost:3100",
+    "DYA_ID_ORIGIN": "http://localhost:3101",
+    "PASSKEY_RP_ID": "localhost"
+  }
+}

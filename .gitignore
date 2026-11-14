@@ -1,0 +1,28 @@
+node_modules/
+dist/
+data/
+.env
+.env.*
+coverage/
+*.xlsx.inspect.ndjson
+
+.DS_Store
+.hermes/
+.vercel
+.env*
+
+# Generated outputs, including the feature tracker, stay local.
+outputs/
+backend/**/outputs/
+frontend/**/outputs/
+
+# Public quote research is retained locally outside the app review.
+/research/stablecoin-quotes-2026-09-27/
+
+# Narrative audit reports stay local; regression inputs live under scripts/.
+/docs/audits/
+
+# Generated Vocs build/cache files.
+frontend/docs/.vocs/
+frontend/docs/docs/.vocs/
+frontend/docs/docs/public/sitemap.xml

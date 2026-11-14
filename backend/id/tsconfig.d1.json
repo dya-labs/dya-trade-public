@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "ES2023", "lib": ["ES2024", "DOM"], "module": "ESNext", "moduleResolution": "Bundler",
+    "strict": true, "skipLibCheck": true, "noEmit": true, "allowJs": true, "esModuleInterop": true,
+    "types": ["node", "next"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "vitest.d1.config.ts"]
+}

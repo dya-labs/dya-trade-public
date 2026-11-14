@@ -1,0 +1,28 @@
+# Development-only placeholders. Copy to .dev.vars (ignored), then generate your own stable key.
+# Share this local bridge secret with Terminal's server configuration.
+DYA_SERVICE_SECRET=development-only-change-this-bridge-secret
+CONFIDENTIAL_SESSION_KEY=replace-with-a-stable-64-character-hex-key
+INTERNAL_ACCESS_PASSWORD=
+ONE_CLICK_JWT=
+# Optional: unsigned NEAR RPC calls use FastNEAR's free tier without it.
+FASTNEAR_API_KEY=
+# Opt in to REAL mainnet key management when relay access and encryption are configured.
+# Existing local recovery simulator accounts remain fenced.
+DYA_ID_PROVIDER_RECOVERY=0
+# Public origin/storage/profile vars belong in wrangler.local.jsonc.
+# Missing provider credentials remain unavailable and fail closed.
+
+# OutLayer Trading accounts. Creating accounts is a local-only pilot that spends real mainnet funds;
+# 1 enables it, and hosted origins ignore it.
+OUTLAYER_ACTIVATION_PILOT=0
+# Setup relayer: a dedicated mainnet implicit account (64-hex ID) and its ed25519: full-access key.
+# It derives each setup's payer and sponsors policy filing, so it needs native NEAR for gas. Blank leaves setup unavailable.
+OUTLAYER_RELAYER_ACCOUNT_ID=
+OUTLAYER_RELAYER_PRIVATE_KEY=
+
+# Dedicated history keyring; JSON values are independent 32-byte hex keys.
+# Set via secret manager / Wrangler secrets in hosted environments.
+FINANCIAL_HISTORY_KEYS=
+FINANCIAL_HISTORY_ACTIVE_KEY_ID=
+# Accept unencrypted financial records when reading; test fixtures only.
+# FINANCIAL_HISTORY_ALLOW_PLAINTEXT_MIGRATION=1

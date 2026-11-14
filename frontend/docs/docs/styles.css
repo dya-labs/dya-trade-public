@@ -1,0 +1,10 @@
+@import '@dya/ui/fonts.css';
+@import '@fontsource-variable/geist-mono';
+@import '@dya/ui/tokens.css';
+
+:root {
+  --vocs-borderRadius_4: var(--radius);
+  --vocs-borderRadius_6: var(--radius);
+  --vocs-borderRadius_8: var(--radius);
+}
+img[src="/dya-mark.svg"] { height: 14px; width: auto; }

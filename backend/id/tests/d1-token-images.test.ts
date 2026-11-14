@@ -1,0 +1,31 @@
+import { afterEach, expect, test } from "vitest";
+import { readFile } from "node:fs/promises";
+import { harness, origin } from "./d1-harness";
+import { D1Store } from "../src/near/repositories/d1-store";
+import { StatementBudget } from "../src/near/repositories/request-budget";
+import { DEFAULT_PAIR } from "../../../packages/wallet-contracts/src/domain/catalog";
+let h:Awaited<ReturnType<typeof harness>>;
+afterEach(async()=>{await h?.mf.dispose();});
+test('image migration fills verified blanks, preserves custom URLs and capabilities, and is idempotent',async()=>{
+ h=await harness(true,undefined,true,true,false);const store=()=>new D1Store(h.db,origin,new StatementBudget('paid'));
+ const near=DEFAULT_PAIR.base.assetId,quote=DEFAULT_PAIR.quote.assetId;
+ await store().transaction(s=>{
+  s.accounts.keep={id:'keep',kind:'passkey',counter:7};
+  s.tokens![quote].iconUrl='https://example.test/custom.png';
+  s.tokens!['nep141:eth.bridge.near'].coingeckoIdOverride='reviewed-ethereum';
+  s.tokens!['nep141:eth.omft.near'].observed.decimals=1;
+  s.tokens![near].updatedAt=Date.now()+100000;
+ });
+ const before=await store().read(s=>s.tokens![near]);
+ const sql=await readFile(new URL('../d1-migrations/0006_token_images.sql',import.meta.url),'utf8');
+ const statements=sql.match(/UPDATE[^;]+;/g)!;
+ const apply=()=>h.raw.batch(statements.map(statement=>h.raw.prepare(statement)));
+ await apply();const after=await store().read(s=>s.tokens![near]);
+ expect(after.iconUrl).toContain('coin-images.coingecko.com');expect(after.revision).toBe(before.revision+1);expect(after.updatedAt).toBeGreaterThan(before.updatedAt);
+ expect({...after,iconUrl:before.iconUrl,revision:before.revision,updatedAt:before.updatedAt}).toEqual(before);
+ expect(await store().read(s=>s.tokens![quote].iconUrl)).toBe('https://example.test/custom.png');
+ expect(await store().read(s=>s.tokens!['nep141:eth.bridge.near'].iconUrl)).toBe('');
+ expect(await store().read(s=>s.tokens!['nep141:eth.omft.near'].iconUrl)).toBe('');
+ expect(await store().read(s=>s.accounts.keep.counter)).toBe(7);
+ await apply();expect(await store().read(s=>s.tokens![near])).toEqual(after);
+});

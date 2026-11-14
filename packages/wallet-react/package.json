@@ -1,0 +1,18 @@
+{
+  "name": "@dya/wallet-react",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "dependencies": {
+    "@dya/config": "*",
+    "@dya/wallet-sdk": "*",
+    "react": "19.3.1",
+    "@dya/ui": "*"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0"
+  }
+}

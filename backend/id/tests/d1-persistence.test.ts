@@ -1,0 +1,63 @@
+import { NextRequest } from "next/server";
+import { createHash } from "node:crypto";
+import { handleService, completeConnection } from "../src/bridge/service";
+import { previewLimit } from "../../../packages/wallet-contracts/src/domain/limit-preview";
+import { ASSETS } from "../../../packages/wallet-contracts/src/domain/assets";
+import { batch, trade, source, identity } from "./fixtures/funding";
+import { authenticator } from "./fixtures/authenticator";
+import { expect, test, vi } from "vitest";
+import { mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { harness, origin } from "./d1-harness";
+import { D1Store } from "../src/near/repositories/d1-store";
+import { StatementBudget } from "../src/near/repositories/request-budget";
+import { hash } from "../src/near/repositories/store";
+import { rememberConfidentialSession, withConfidentialSession } from "../src/near/services/confidential-sessions";
+test("encrypted_nested_recovery_records_survive_actual_workerd_restart", async () => {
+  const path = await mkdtemp(join(tmpdir(), "id-d1-preservation-"));
+  const persistence = { path, id: crypto.randomUUID() };
+  let h = await harness(true, persistence);
+  const store = () => new D1Store(h.db, origin, new StatementBudget("paid"));
+  vi.stubEnv("CONFIDENTIAL_SESSION_KEY", "33".repeat(32));
+  vi.stubEnv("APP_ORIGIN",origin);vi.stubEnv("DYA_TERMINAL_ORIGIN","http://localhost:3100");vi.stubEnv("DYA_SERVICE_SECRET","synthetic-service-key");
+  const service = (body:unknown) => handleService(new NextRequest(`${origin}/api/service`,{method:"POST",headers:{"x-dya-service-secret":"synthetic-service-key","content-type":"application/json"},body:JSON.stringify(body)}),store());
+  try {
+    const preview=previewLimit({side:"buy",quantity:"1",price:"4",expiryHours:24},{accountId:"synthetic-account",checkedAt:Date.now(),blockHeight:1,assets:ASSETS.map(a=>({...a,raw:"100000000000000000000000000",amount:"10000"}))});
+    const review=trade();
+    const recoveryBatch=batch();recoveryBatch.state="unknown";
+    recoveryBatch.legs.forEach((leg,i)=>{leg.state="unknown";leg.intentHash=`leg-hash-${i}`;leg.providerStatus="uncertain";});
+    await store().transaction(s => {
+      // Synthetic recovery payloads exercise lossless passthrough, not providers.
+      const fixture: Record<string, unknown> = {};
+      fixture.accounts = { a: { id: "a", kind: "passkey", counter: 7, credentialId: "credential", publicKey: authenticator(origin).publicKey, backup: {id:"backup",publicKey:"backup-key",counter:3,status:"pending_onchain"}, fundingBatches: {batch:recoveryBatch}, consolidations:{consolidation:{id:"consolidation",createdAt:1,state:"unknown",intentHash:"consolidation-hash",txHash:"consolidation-tx",review:{id:"review",expiresAt:new Date(Date.now()+60000).toISOString(),accountId:"a",inputs:[{asset:source,raw:"123",amount:"1",outputRaw:"122"}],outputRaw:"122",outputAmount:"0.99",inputAmount:"1",costAmount:"0.01"}}} } };
+      fixture.sessions = { [hash("session")]:  {accountId:"a",expires:Date.now()+3600000,clientOrigin:"http://localhost:3100",ceremony:"ceremony"} };
+      fixture.challenges = { [hash("flow")]:  {purpose:"hosted-flow",value:"proof",expires:Date.now()+60000,accountId:"a",hostedFlow:{kind:"approval",clientOrigin:"http://localhost:3100",callback:"http://localhost:3100/callback",verifierHash:"verifier",status:"running",submitRoute:"market/submit",codeHash:"synthetic-code-hash",result:{status:200,body:{intentHash:"receipt-hash"}}}} };
+      const { payload: cachedPayload, challenge: cachedChallenge, correlationId: cachedCorrelation, ...cachedQuote } = trade();
+      (fixture.challenges as Record<string, unknown>)[hash("cached-market-quote")] = { purpose: "market-quote", value: "market-quote", accountId: "a", expires: Date.parse(cachedQuote.expiresAt), quoteSession: hash("session"), marketQuote: { ...cachedQuote, accountId: identity, quoteExpiresAt: cachedQuote.expiresAt, swapType: "EXACT_INPUT" }, marketTrade: { ...cachedQuote, payload: cachedPayload, challenge: cachedChallenge, correlationId: cachedCorrelation } };
+      (fixture.sessions as Record<string, { marketQuoteId?: string }>)[hash("session")].marketQuoteId = hash("cached-market-quote");
+      fixture.liveOrders = { order: {id:"order",ownerId:"a",createdAt:1,updatedAt:2,requestId:"request",terms:"terms",preview,state:"unknown",preparationIds:["preparation"],cancelPending:true,fundingState:"unknown",fundingIntentHash:"order-funding-hash",syncError:"synthetic uncertainty",provider:{id:"provider-order",fillStatus:"AWAITING_DEPOSIT",payoutStatus:"NOT_STARTED",payoutFinal:false,depositAddress:"deposit.near",depositMemo:"memo",fundingAmount:"123",inputAsset:source.assetId,depositedAmount:"0",partialFills:[{id:"fill",amountIn:"1",amountOut:"2"}],payoutTxHashes:["payout-hash"],refundTxHash:"refund-hash"}} };
+      fixture.liveTrades = { trade: {id:"trade",ownerId:"a",createdAt:1,updatedAt:2,state:"unknown",review:trade(),intentHash:"trade-hash",nearTxHashes:["near-hash"]} };
+      fixture.deposits = { deposit: {id:"deposit",ownerId:"a",createdAt:1,updatedAt:2,status:"PROCESSING",quote:{confidentiality:"advanced",direction:"deposit",sourceChain:"Base",asset:"USDC",amount:"1",refundTo:"synthetic-refund",recipient:"a",depositAddress:"synthetic-deposit",depositMemo:"memo",amountIn:"1000000",amountInFormatted:"1",amountOut:"999000",amountOutFormatted:"0.999",minAmountOut:"990000",deadline:review.expiresAt,timeEstimateSeconds:60,correlationId:"deposit-correlation",signature:"synthetic-signature",submissionEnabled:true},originChainTxHashes:["deposit-origin-hash"],destinationChainTxHashes:["deposit-destination-hash"]} };
+      fixture.withdrawals = { withdrawal: {id:"withdrawal",ownerId:"a",createdAt:1,updatedAt:2,state:"unknown",review:{confidentiality:"advanced",direction:"withdraw",sourceChain:"NEAR Intents",destinationChain:"Base",asset:"USDC",amount:"1",amountRaw:"1000000",destinationWallet:"synthetic-wallet",destinationAsset:source.assetId,originAsset:source.assetId,expectedReceive:"0.999",minimumReceive:"0.99",available:"1",balanceBlock:1,deadline:review.expiresAt,depositAddress:"synthetic-deposit",depositMemo:null,payload:review.payload,challenge:review.challenge,correlationId:"withdrawal-correlation",route:{origin:source,destination:source}},intentHash:"withdrawal-hash",originChainTxHashes:["origin-hash"],destinationChainTxHashes:["destination-hash"]} };
+      fixture.requests=[123];
+      Object.assign(s,fixture);
+    });
+    await rememberConfidentialSession(store(), "session", "a", {accessToken:"synthetic-access",refreshToken:"synthetic-refresh",expiresIn:3600,refreshExpiresIn:3600} as never);
+    const verifier="v".repeat(43),verifierHash=createHash("sha256").update(verifier).digest("base64url");
+    const flow=await (await service({operation:"flow",body:{action:"connect",verifierHash}})).json();
+    const completed=await completeConnection(flow.flowId,"session",store());
+    await store().transaction(s=>{const grant=Object.values(s.sessions).find(session=>session.confidential)!;grant.confidential!.lease={owner:"persisted-owner",until:Date.now()+60000};});
+    const before = await store().read(s => s);
+    expect(JSON.stringify(before)).not.toContain("synthetic-access");
+    await h.mf.dispose();
+    h = await harness(true, persistence, false);
+    expect(await store().read(s => s)).toEqual(before);
+    const exchange={operation:"exchange",flowId:flow.flowId,code:completed.code,verifier};
+    const response=await service(exchange);expect(response.status).toBe(200);
+    const grant=await response.json();
+    expect((await service(exchange)).status).toBe(400);
+    const access = await withConfidentialSession(store(), grant.session, "a", async token => token);
+    expect(access).toBe("synthetic-access");
+  } finally { await h.mf.dispose(); vi.unstubAllEnvs(); await rm(path,{recursive:true,force:true}); }
+});

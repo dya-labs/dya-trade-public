@@ -1,0 +1,67 @@
+import { afterEach, beforeEach, expect, test, vi } from "vitest";
+import { NextRequest } from "next/server";
+import { handleNear } from "../src/near/http/api";
+import { handleService } from "../src/bridge/service";
+import { POST } from "../../../frontend/id/app/api/flow/[id]/route";
+import { D1Store } from "../src/near/repositories/d1-store";
+import { StatementBudget } from "../src/near/repositories/request-budget";
+import { harness, origin } from "./d1-harness";
+import { hash, type StateStore } from "../src/near/repositories/store";
+import { StorageBudgetExceededError, StorageUnavailableError } from "../src/near/repositories/storage-error";
+import { OrderService } from "../src/near/services/orders";
+import { previewLimit } from "../../../packages/wallet-contracts/src/domain/limit-preview";
+import { ASSETS } from "../../../packages/wallet-contracts/src/domain/assets";
+import { intentsIdentity } from "../src/near/auth/intents";
+import { isoCBOR } from "@simplewebauthn/server/helpers";
+import { generateKeyPairSync } from "node:crypto";
+import type { D1Client } from "../src/near/repositories/d1-records";
+let h: Awaited<ReturnType<typeof harness>>;
+beforeEach(async () => { h = await harness(); vi.stubEnv("APP_ORIGIN", origin); vi.stubEnv("DYA_TERMINAL_ORIGIN", "http://localhost:3100"); vi.stubEnv("DYA_SERVICE_SECRET", "synthetic-service-secret"); vi.stubEnv("DYA_ID_D1_QUERY_PROFILE", "paid"); });
+afterEach(async () => { await h?.mf.dispose(); vi.unstubAllEnvs(); vi.restoreAllMocks(); });
+const unavailable: StateStore = { read() { throw new StorageUnavailableError(); }, transaction() { throw new StorageUnavailableError(); } };
+const request = (path: string, body?: unknown) => new NextRequest(`${origin}/${path}`, { method: body === undefined ? "GET" : "POST", headers: {host: "localhost:3101", origin, "content-type": "application/json", "x-dya-service-secret": "synthetic-service-secret"}, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
+function check(response: Response) { expect(response.status).toBe(503); expect(response.headers.get("retry-after")).toBe("1"); expect(response.headers.get("cache-control")).toBe("no-store"); }
+test("api_errors_are_safe_503", async () => {
+  const log = vi.spyOn(console, "error");
+  const wallet = await handleNear(request("api/near/state"), ["state"], unavailable);
+  const service = await handleService(request("api/service", { operation: "request", path: "state" }), unavailable);
+  check(wallet); check(service);
+  expect(await wallet.json()).toEqual({ error: new StorageUnavailableError().message, code: "ID_STORAGE_UNAVAILABLE", requestId: expect.any(String) });
+  vi.stubEnv("TERMINAL_STORAGE", "d1"); // Node has no Workers binding: must fail closed.
+  const flow = await POST(request("api/flow/" + "x".repeat(43), {action: "connect"}), {params: Promise.resolve({id: "x".repeat(43)})});
+  check(flow);
+  expect(JSON.stringify(await flow.json())).not.toMatch(/SQL|token|binding|database|path|cause/);
+  expect(log).not.toHaveBeenCalled();
+});
+test("nested_handlers_share_statement_budget_and_preserve_retry_headers", async () => {
+  const s = new D1Store(h.db, origin, new StatementBudget("paid"));
+  await s.transaction(state => { state.accounts.a = {id: "a", kind: "passkey"}; state.sessions[hash("grant")] = {accountId: "a", expires: Date.now()+60000, clientOrigin: "http://localhost:3100"}; });
+  let dispatched = 0;
+  const db: D1Client = {prepare: h.db.prepare.bind(h.db), async batch(statements) { dispatched++; return h.db.batch(statements); }};
+  const budget = new StatementBudget("free");
+  budget.reserveStatements(36, false);
+  const response = await handleService(request("api/service", {operation: "request", path: "state", session: "grant"}), new D1Store(db, origin, budget), budget);
+  check(response); expect((await response.json()).code).toBe("ID_STORAGE_BUDGET_EXCEEDED"); expect(budget.exhausted).toBe(true); expect(dispatched).toBe(1);
+  const independent = await new D1Store(h.db, origin, new StatementBudget("free")).read(state => state.accounts.a.id);
+  expect(independent).toBe("a");
+});
+test("budget_exhaustion_preserves_claims_and_outcomes", async () => {
+  const { publicKey } = generateKeyPairSync("ec", {namedCurve: "prime256v1"});
+  const jwk = publicKey.export({format: "jwk"});
+  const key = Buffer.from(isoCBOR.encode(new Map<number, number | Uint8Array>([[1,2],[3,-7],[-1,1],[-2,new Uint8Array(Buffer.from(jwk.x!, "base64url"))],[-3,new Uint8Array(Buffer.from(jwk.y!, "base64url"))]]))).toString("base64url");
+  const identity = intentsIdentity(key);
+  await new D1Store(h.db, origin, new StatementBudget("paid")).transaction(s => { s.accounts.a = {id: "a", kind: "passkey", publicKey: key}; s.sessions[hash("session")] = {accountId: "a", expires: Date.now()+60000}; });
+  const balances = {accountId: identity.accountId, checkedAt: Date.now(), blockHeight: 0, assets: ASSETS.map(a => ({...a, raw: "100000000000000000000000000", amount: "10000"}))};
+  const preview = previewLimit({side: "buy", quantity: "0.01", price: "1000", expiryHours: 1}, balances);
+  const create = vi.fn(async () => { throw new Error("mock unknown outcome"); });
+  let budget = new StatementBudget("free");
+  budget.reserveStatements(36, false);
+  await expect(new OrderService(new D1Store(h.db, origin, budget), {create, get: vi.fn(), cancel: vi.fn()}, true).create("session", "request-before", preview)).rejects.toBeInstanceOf(StorageBudgetExceededError);
+  expect(create).not.toHaveBeenCalled();
+  budget = new StatementBudget("paid");
+  create.mockImplementation(async () => { budget.reserveStatements(800-budget.used, false); return {id: "provider"} as never; });
+  await expect(new OrderService(new D1Store(h.db, origin, budget), {create, get: vi.fn(), cancel: vi.fn()}, true).create("session", "request-after", preview)).rejects.toBeInstanceOf(StorageBudgetExceededError);
+  expect(create).toHaveBeenCalledTimes(1);
+  const records = await new D1Store(h.db, origin, new StatementBudget("paid")).read(s => Object.values(s.liveOrders!));
+  expect(records).toHaveLength(1); expect(records[0].state).toBe("creating");
+});

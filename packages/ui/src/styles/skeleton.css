@@ -1,0 +1,8 @@
+/* Keep sticky headers and control surfaces inside the hidden sample's stacking
+   context so they cannot cover Skullet's measured paint layer. */
+.dya-skeleton [skullet-loading] { isolation: isolate; }
+.dya-skeleton [skullet-loading] > :is([skullet-ghost], [skullet-snapshot]) {
+  position: relative;
+  z-index: 0;
+}
+.dya-skeleton [skullet-loading] > [skullet-layer] { z-index: 1; }

@@ -1,0 +1,20 @@
+import { fireEvent, render, screen } from "@testing-library/react";
+import { expect, it, vi } from "vitest";
+import { FundingBalancePrompt } from "@/components/near/funding-balance-prompt";
+import { DEFAULT_PAIR } from "@/lib/near/domain/catalog";
+vi.mock("@dya/wallet-ui/hooks/use-wallet-queries", () => ({ useCatalogQuery: () => ({ data: { assets: [DEFAULT_PAIR.quote, { ...DEFAULT_PAIR.quote, assetId: "base-usdc", blockchain: "base", coingeckoId: "usd-coin" }] } }) }));
+it("offers funding transfer only when supported Funding is positive and Trading is empty", () => {
+  const onMove = vi.fn();
+  const funding = { ...DEFAULT_PAIR.quote, assetId: "base-usdc", raw: "1000000", amount: "1" };
+  const empty = { ...DEFAULT_PAIR.quote, raw: "0", amount: "0" };
+  const view = render(<FundingBalancePrompt balances={{ assets: [funding, empty] }} disabled={false} onMoveToTrading={onMove} fallback={<span>0.00 USDC</span>} />);
+  fireEvent.click(screen.getByRole("button", { name: "Move funds" }));
+  expect(onMove).toHaveBeenCalledOnce();
+  expect(screen.getByText("0.00 USDC")).toBeVisible();
+  view.rerender(<FundingBalancePrompt balances={{ assets: [funding, { ...empty, amount: "1" }] }} disabled={false} onMoveToTrading={onMove} fallback={<span>0.00 USDC</span>} />);
+  expect(screen.queryByRole("button")).toBeNull();
+  expect(screen.getByText("0.00 USDC")).toBeVisible();
+  view.rerender(<FundingBalancePrompt balances={{ assets: [empty] }} disabled={false} onMoveToTrading={onMove} fallback={<span>0.00 USDC</span>} />);
+  expect(screen.queryByRole("button")).toBeNull();
+  expect(screen.getByText("0.00 USDC")).toBeVisible();
+});

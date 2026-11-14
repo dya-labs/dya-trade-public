@@ -1,0 +1,100 @@
+/* Shared DYA theme tokens, usable without Tailwind or a CSS reset. */
+:root {
+  --overlay-background: rgb(0 0 0 / 72%);
+  --motion-duration-fast: 150ms;
+  --motion-duration-tab: 180ms;
+  --motion-ease-standard: cubic-bezier(0.23, 1, 0.32, 1);
+  --motion-tab-stretch: 4;
+  --background: #f3f7f4;
+  --foreground: #182d23;
+  --card: #ffffff;
+  --card-foreground: var(--foreground);
+  --popover: #ffffff;
+  --popover-foreground: var(--foreground);
+  --primary: #087f5b;
+  --primary-foreground: #ffffff;
+  --secondary: #e3eee7;
+  --secondary-foreground: #294b39;
+  --muted: #eaf1ec;
+  --muted-foreground: #536e60;
+  --accent: #d8ecdf;
+  --accent-foreground: #175239;
+  --destructive: #be3154;
+  --border: #cadcd1;
+  --input: #bcd2c6;
+  --ring: var(--primary);
+  --market-up: var(--primary);
+  --market-down: var(--destructive);
+  --market-intents: #2f6fd6;
+  --chart-1: var(--primary);
+  --chart-2: #248d79;
+  --chart-3: #ae771f;
+  --chart-4: var(--destructive);
+  --chart-5: #8176ba;
+  --success: var(--primary);
+  --warning: var(--chart-3);
+  --info: var(--market-intents);
+  --radius: 0.35rem;
+  --radius-panel: 6px;
+  --qr-background: #0d0f0e;
+  --qr-foreground: #e8f0ed;
+  --hover: color-mix(in srgb, var(--foreground) 4%, transparent);
+  --panel-border: color-mix(in srgb, var(--foreground) 4%, transparent);
+  --radius-dialog: 12px;
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+.dark {
+  --background: #0d0f0e;
+  --foreground: #e8f0ed;
+  --card: #111312;
+  --card-foreground: var(--foreground);
+  --popover: #1b1e1c;
+  --popover-foreground: var(--foreground);
+  --primary: #34d399;
+  --primary-foreground: #061b12;
+  --secondary: #101b15;
+  --secondary-foreground: #dcebe3;
+  --muted: #1c1f1d;
+  --muted-foreground: #9fafa9;
+  --accent: #15251d;
+  --accent-foreground: var(--foreground);
+  --destructive: #fb7185;
+  --border: var(--panel-border);
+  --input: #2c4437;
+  --ring: var(--primary);
+  --market-up: var(--primary);
+  --market-down: var(--destructive);
+  --market-intents: #6ea8fe;
+  --chart-1: var(--primary);
+  --chart-2: #68bea8;
+  --chart-3: #e7bb79;
+  --chart-4: var(--destructive);
+  --chart-5: #b5a2e2;
+  --success: var(--primary);
+  --warning: var(--chart-3);
+  --info: var(--market-intents);
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+
+/* Shared matte control surfaces for buttons and editable fields. */
+:root, .dark {
+  --control: color-mix(in srgb, var(--background), var(--foreground) 3%);
+  --control-hover: color-mix(in srgb, var(--background), var(--foreground) 6%);
+  --control-border: color-mix(in srgb, var(--foreground) 10%, transparent);
+}

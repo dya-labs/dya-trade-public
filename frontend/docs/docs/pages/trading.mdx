@@ -1,0 +1,37 @@
+import { DYA_BRAND } from '@dya/config'
+
+# Trading
+
+## Prices on the chart
+
+The chart shows prices from another market, such as NEAR/USDC or NEAR/USDT. These help you follow the market, but they may differ from the price you get on {DYA_BRAND.name}.
+
+Before approving a market order, review the offered price, minimum amount you will receive, and allowed price change. If the offer expires, get a new one before continuing.
+
+## Market orders
+
+Select **Market**, choose Buy or Sell, enter an amount, and review your order. When a current price is available, you can enter the amount in either the token you are trading or the currency used to pay for it.
+
+**Slippage** is how much the price may change before your order completes. Your chosen limit sets the price change you allow; it does not guarantee the order will complete.
+
+## Limit orders
+
+Select **Limit**, set your price in USDC, enter an amount, and choose when the order should expire. Review the details and approve it with your passkey.
+
+**Last** fills in the latest available public trade price, converted to USDC if needed. It may be unavailable when the price data is out of date.
+
+An order may complete all at once, complete in parts, expire, or be cancelled. Setting a limit price does not guarantee a trade.
+
+Wait for cancellation to be confirmed. Funds may take longer to return after an order stops trading.
+
+Your confirmed open orders appear on the selected token's chart as dashed lines. Each line shows the amount left and your limit price. If the chart uses a different currency, {DYA_BRAND.name} needs a current exchange rate to place the line correctly.
+
+## History and fees
+
+Use **Open orders**, **Trade history**, and **Order history** to check your activity. Completed trade details show the amounts you actually received. These may differ from the chart price or an earlier estimate.
+
+Review the costs and amounts before approving each order. Fees and prices can change, so a previous offer may no longer apply.
+
+## If an order's status is unclear
+
+Check the existing order before approving another one. A timeout or connection error does not necessarily mean your order failed.

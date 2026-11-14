@@ -1,0 +1,13 @@
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { TradingActivationPreview } from "@dya/ui/components/trading-activation-preview";
+const meta = { title: "ID/Trading account/Activation prototype", component: TradingActivationPreview, parameters: { layout: "centered" } } satisfies Meta<typeof TradingActivationPreview>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export const ChooseAccount: Story = {};
+export const ReviewCost: Story = { args: { initialState: { phase: "review" } } };
+export const ExpiredQuote: Story = { args: { initialState: { phase: "expired" } } };
+export const PaymentUncertain: Story = { args: { scenario: "payment-uncertain", initialState: { phase: "uncertain" } } };
+export const SetupFailure: Story = { args: { scenario: "policy-failure", initialState: { phase: "review" } } };
+export const RefundPending: Story = { args: { initialState: { phase: "refund" } } };
+export const Refunded: Story = { args: { initialState: { phase: "refunded" } } };
+export const ReadyToFund: Story = { args: { initialState: { phase: "ready" } } };

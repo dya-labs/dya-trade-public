@@ -1,0 +1,51 @@
+import { afterEach, beforeEach, expect, test } from "vitest";
+import { harness, origin, synchronized } from "./d1-harness";
+import { D1Store } from "../src/near/repositories/d1-store";
+import { StatementBudget } from "../src/near/repositories/request-budget";
+import { discoverTokens, requireToken } from "../src/near/services/token-policy";
+import { tokenAllowed, type TokenRecord } from "../../../packages/wallet-contracts/src/domain/token-registry";
+import { DEFAULT_PAIR } from "../../../packages/wallet-contracts/src/domain/catalog";
+let h: Awaited<ReturnType<typeof harness>>;
+const now = Date.now();
+const store = () => new D1Store(h.db, origin, new StatementBudget("paid"));
+const review = (id: string, change: (token: TokenRecord) => TokenRecord) => store().transaction(s => { s.tokens![id] = change(s.tokens![id]); });
+beforeEach(async () => { h = await harness(); });
+afterEach(async () => { await h?.mf.dispose(); });
+const asset = { ...DEFAULT_PAIR.base, assetId:'new:asset', coingeckoId:'verified-id' };
+test('fixed seeds survive restart; live discovery never auto-approves',async()=>{
+ expect(await store().read(s=>Object.keys(s.tokens!).length)).toBe(197);
+ const near = await store().read(s=>s.tokens![DEFAULT_PAIR.base.assetId]);
+ expect(near).toMatchObject({status:'approved',trading:true,deposits:true,withdrawals:true});
+ await discoverTokens(store(),[asset],now);
+ expect(await store().read(s=>s.tokens![asset.assetId])).toMatchObject({status:'pending',trading:false,deposits:false,withdrawals:false});
+ await expect(store().read(s=>requireToken(s,asset,'deposits'))).rejects.toThrow();
+});
+test('a reviewed token allows its capabilities; identity drift invalidates the review',async()=>{
+ await discoverTokens(store(),[asset],now);
+ await review(asset.assetId,t=>({...t,status:'approved',trading:true,deposits:true,withdrawals:false,revision:t.revision+1}));
+ await store().read(s=>requireToken(s,asset,'trading'));
+ await expect(store().read(s=>requireToken(s,asset,'withdrawals'))).rejects.toThrow();
+ await discoverTokens(store(),[{...asset,contractAddress:'changed'}],now+1);
+ const changed=await store().read(s=>s.tokens![asset.assetId]);
+ expect(changed.status).toBe('pending');expect(tokenAllowed(asset,changed,'trading')).toBe(false);
+ await review(asset.assetId,t=>({...t,identity:t.observed,status:'approved',trading:true,revision:t.revision+1}));
+ expect(await store().read(s=>tokenAllowed({...asset,contractAddress:'changed'},s.tokens![asset.assetId],'trading'))).toBe(true);
+});
+test('concurrent discovery preserves a single pending record and disabling keeps wallets',async()=>{
+ const db=synchronized(h.db);
+ await Promise.all([1,2].map(()=>discoverTokens(new D1Store(db,origin,new StatementBudget('paid')),[asset],now)));
+ await store().transaction(s=>{s.accounts.keep={id:'keep',kind:'passkey',counter:7};});
+ await review(DEFAULT_PAIR.base.assetId,t=>({...t,status:'disabled',trading:false,deposits:false,withdrawals:false}));
+ const row=await store().read(s=>s.tokens![DEFAULT_PAIR.base.assetId]);
+ await discoverTokens(store(),[{...row.identity}],now);
+ expect(await store().read(s=>s.tokens![row.id].status)).toBe('disabled');
+ expect(await store().read(s=>s.accounts.keep.counter)).toBe(7);
+});
+test('CoinGecko overrides persist independently and survive provider discovery changes',async()=>{
+ await discoverTokens(store(),[{...asset,coingeckoId:''}],now);
+ await review(asset.assetId,t=>({...t,status:'approved',trading:true,coingeckoIdOverride:'reviewed-coin'}));
+ expect(await store().read(s=>s.tokens![asset.assetId])).toMatchObject({identity:{coingeckoId:''},coingeckoIdOverride:'reviewed-coin',trading:true});
+ await store().read(s=>requireToken(s,{...asset,coingeckoId:''},'trading'));
+ await discoverTokens(store(),[{...asset,coingeckoId:'provider-new'}],now+1);
+ expect(await store().read(s=>s.tokens![asset.assetId])).toMatchObject({coingeckoIdOverride:'reviewed-coin',status:'pending',trading:false});
+});

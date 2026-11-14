@@ -1,0 +1,37 @@
+@layer components {
+  .typeset-chat {
+    --typeset-size: 1em;
+    --typeset-leading: 1.6;
+    --typeset-flow: 0.65em;
+    font-size: var(--typeset-size);
+    line-height: var(--typeset-leading);
+    overflow-wrap: anywhere;
+  }
+
+  .typeset-chat :where(p, ul, ol, blockquote, pre, table, h1, h2, h3, h4, h5, h6) + :where(*) {
+    margin-block-start: var(--typeset-flow);
+  }
+
+  .typeset-chat :where(h1, h2, h3, h4, h5, h6) {
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .typeset-chat :where(h1, h2) { font-size: 1.125em; }
+  .typeset-chat :where(ul, ol) { padding-inline-start: 1.25em; }
+  .typeset-chat :where(ul) { list-style: disc; }
+  .typeset-chat :where(ol) { list-style: decimal; }
+  .typeset-chat :where(blockquote) {
+    border-inline-start: 2px solid var(--border);
+    padding-inline-start: 0.75em;
+    color: var(--muted-foreground);
+  }
+
+  .typeset-chat :where(a) { text-decoration: underline; }
+  .typeset-chat :where(pre) { overflow-x: auto; }
+  .typeset-chat :where(th, td) {
+    border-block-end: 1px solid var(--border);
+    padding: 0.25em 0.5em;
+    text-align: start;
+  }
+}

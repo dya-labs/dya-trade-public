@@ -1,0 +1,52 @@
+.toast-transition-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
+  transition: background-color 180ms ease-out;
+}
+.toast-transition-icon[data-complete='true'] { background: var(--success); }
+.toast-transition-icon[data-complete='true'][data-outcome='error'] { background: var(--destructive); }
+.toast-transition-spinner, .toast-transition-check { position: absolute; width: 16px; height: 16px; }
+.toast-transition-spinner { opacity: 1; transition: opacity 100ms ease-out; }
+.toast-transition-icon[data-complete='true'] .toast-transition-spinner { opacity: 0; }
+.toast-transition-check { opacity: 0; }
+.toast-transition-check path { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.toast-transition-icon[data-complete='true'] .toast-transition-check { opacity: 1; }
+.toast-transition-icon[data-complete='true'] .toast-transition-check path {
+  animation: toast-draw-check 220ms cubic-bezier(.16, 1, .3, 1) 100ms both;
+}
+.toast-transition-icon[data-complete='true'][data-outcome='error'] .toast-transition-check path { animation-duration: 160ms; }
+.toast-transition-icon[data-complete='true'] .toast-transition-check .toast-error-second-stroke { animation-delay: 180ms; }
+@keyframes toast-draw-check { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .toast-transition-icon, .toast-transition-spinner { transition: none; }
+  .toast-transition-icon[data-complete='true'] .toast-transition-check path { animation: none; stroke-dashoffset: 0; }
+}
+
+ .dya-success-mark { opacity: 0; }
+.dya-success-mark path { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.dya-success-mark[data-animate='true'] { transition: opacity 100ms ease-out; }
+.dya-success-mark[data-animate='true'] path {
+  transition: stroke-dashoffset 220ms cubic-bezier(.16, 1, .3, 1);
+}
+.dya-success-mark[data-complete='true'] { opacity: 1; }
+.dya-success-mark[data-complete='true'] path { stroke-dashoffset: 0; transition-delay: var(--success-mark-delay, 0ms); }
+@media (prefers-reduced-motion: reduce) {
+  .dya-success-mark[data-animate='true'], .dya-success-mark[data-animate='true'] path { transition: none; }
+}
+
+
+.toast-transition-icon[data-size='lg'] {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+}
+.toast-transition-icon[data-size='lg'] :is(.toast-transition-spinner, .toast-transition-success) {
+  width: 2.75rem;
+  height: 2.75rem;
+}

@@ -1,0 +1,30 @@
+// @vitest-environment node
+import { expect, it, vi } from "vitest";
+import { OrderService } from "../../../backend/id/src/near/services/orders";
+import { emptyState, hash, type StateStore } from "../../../backend/id/src/near/repositories/store";
+import { type LimitPreview, previewLimit } from "../../../packages/wallet-contracts/src/domain/limit-preview";
+import { ASSETS } from "../../../packages/wallet-contracts/src/domain/assets";
+import type { FeePlan } from "../../../packages/wallet-contracts/src/domain/trading-fees";
+import { verifyFeeAllocations } from "../../../backend/id/src/near/services/fee-verification";
+vi.mock("../../../backend/id/src/near/auth/intents",()=>({accountIdentity:()=>({accountId:"0x"+"a".repeat(40)})}));
+it("persists fee terms and prevents idempotent reuse across policy revisions (mock provider)",async()=>{
+  const accountId="0x"+"a".repeat(40), token="synthetic-session";
+  let state=emptyState();
+  state.accounts.user={id:"user",kind:"passkey",publicKey:"synthetic",counter:0};
+  state.sessions[hash(token)]={accountId:"user",expires:Date.now()+60000};
+  const store:StateStore={read:fn=>fn(structuredClone(state)),transaction:fn=>{const next=structuredClone(state);const result=fn(next);state=next;return result;}};
+  const plan:FeePlan={kind:"limit",revision:1,maxTotalBps:40,recipient:"treasury.near",requestedDyaBps:20};
+  const preview={...previewLimit({side:"buy",quantity:"1",price:"4",expiryHours:24},{accountId,blockHeight:1,checkedAt:Date.now(),assets:ASSETS.map(a=>({...a,raw:"100000000",amount:"100"}))}),feePlan:plan};
+  let count=0;
+  const create=vi.fn(async(p:LimitPreview)=>({id:`provider-${++count}`,fillStatus:"AWAITING_DEPOSIT" as const,payoutStatus:"NOT_STARTED",payoutFinal:false,depositAddress:"deposit.near",fundingAmount:"4000000",inputAsset:ASSETS[1].assetId,depositedAmount:"0",partialFills:[],feeReceipt:verifyFeeAllocations([{recipient:plan.recipient,fee:20},{recipient:"provider.near",fee:20}],p.feePlan!)}));
+  const service=new OrderService(store,{create,get:vi.fn(),cancel:vi.fn()},true);
+  const first=await service.create(token,"request-1",preview);
+  expect((await service.create(token,"request-1",preview)).id).toBe(first.id);
+  const changed={...preview,feePlan:{...plan,revision:2}};
+  await expect(service.create(token,"request-1",changed)).rejects.toThrow("different terms");
+  const second=await service.create(token,"request-2",changed);
+  expect(second.id).not.toBe(first.id);
+  expect(create).toHaveBeenCalledTimes(2);
+  expect(first.preview.feePlan?.revision).toBe(1);
+  expect(second.preview.feePlan?.revision).toBe(2);
+});

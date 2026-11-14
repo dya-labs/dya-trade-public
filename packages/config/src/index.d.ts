@@ -1,0 +1,43 @@
+export declare const DYA_WALLET_NAMES: Readonly<{ main: string; defaultTrading: string; legacyTrading: string }>;
+export declare const DYA_BRAND: Readonly<{ name: string; idName: string; accountName: string; tagline: string; desc: string }>;
+export declare const DYA_SOCIAL_HANDLES: Readonly<{ x: string; telegram: string }>;
+export declare const DYA_URLS: Readonly<{ app: string; id: string; docs: string; x: string; xFollow: string; telegram: string }>;
+
+/** Toast copy keys are stable identifiers, independent of message wording. */
+export declare const TOAST_MESSAGES: Readonly<{
+  confirmationCancelled: string;
+  confirmationExpired: string;
+  quoteExpired: string;
+  limitOrderSubmitted: string;
+  orderConfirming: string;
+  orderSubmitting: string;
+  tradeProcessing: string;
+  tradeCompleted: string;
+  tradeFailed: string;
+  tradeStatusUnavailable: string;
+  orderStatusUnavailable: string;
+  orderSubmitted: string;
+  signInExpired: string;
+  signOutFailed: string;
+  confirmationIncomplete: string;
+  passkeyFailed: string;
+  accountReady: string;
+  accountDraftResumed: string;
+  changesSaved: string;
+  networkAvailable: string;
+  sessionEnding: string;
+  connectionFailed: string;
+  connecting: string;
+  changeUndone: string;
+  keepChanges: string;
+  savingChanges: string;
+  saveFailed: string;
+  requestFailed: string;
+  walletConnectionIncomplete: string;
+  walletPopupBlocked: string;
+  walletRequestExpired: string;
+  idWindow: string;
+}>;
+export type ToastMessageId = keyof typeof TOAST_MESSAGES;
+export declare const TOAST_ACTIONS: Readonly<{ retry: string; undo: string; keep: string; cancel: string; }>;
+export type ToastActionId = keyof typeof TOAST_ACTIONS;

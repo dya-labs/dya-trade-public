@@ -1,0 +1,12 @@
+import { z } from "zod";
+import type { AuthenticationResponseJSON } from "@simplewebauthn/browser";
+import { request } from "./request";
+import { authenticationOptions } from "./schemas/account";
+import { fundingBatch } from "./schemas/funding-conversions";
+const operation = z.object({ operation: fundingBatch });
+export const prepareFunding = (inputs: { assetId: string; amount: string }[]) => request("funding/prepare", operation, { inputs });
+export const authorizeFunding = (id: string, legId: string) => request("funding/authorize", z.object({ options: authenticationOptions }), { id, legId });
+export const submitFunding = (assertion: AuthenticationResponseJSON) => request("funding/submit", operation, assertion);
+export const cancelFunding = (id: string) => request("funding/cancel", operation, { id });
+export const fundingHistory = () => request("funding/history", z.object({ operations: z.array(fundingBatch) }), {});
+export const fundingStatus = (id: string) => request("funding/status", operation, { id });
